@@ -17,7 +17,7 @@ namespace A._2_DemoMVC_Rotas.Controllers
         {
             return View();
             //Return View("Privacy") Outra forma de chamar a view caso o nome
-            //do método seja diferente do arquivo
+            //do método seja diferente do arquivo cshtml
         }
 
         public IActionResult Privacy()
