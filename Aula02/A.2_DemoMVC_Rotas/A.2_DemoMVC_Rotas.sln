@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A.2_DemoMVC_Rotas", "A.2_DemoMVC_Rotas\A.2_DemoMVC_Rotas.csproj", "{8E099EC6-FE76-4293-ABA2-3034DC58B485}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A.2_DemoMVC_Rotas", "A.2_DemoMVC_Rotas\A.2_DemoMVC_Rotas.csproj", "{8E099EC6-FE76-4293-ABA2-3034DC58B485}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula01", "Aula01", "{DAD2F307-720A-47BA-8FD3-EDC1B6FA540B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E099EC6-FE76-4293-ABA2-3034DC58B485} = {DAD2F307-720A-47BA-8FD3-EDC1B6FA540B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39D7B86B-2D3C-49E3-A0DA-2BAE0F4941BB}

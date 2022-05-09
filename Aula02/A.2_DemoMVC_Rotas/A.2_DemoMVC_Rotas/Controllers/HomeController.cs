@@ -13,7 +13,7 @@ namespace A._2_DemoMVC_Rotas.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string id, string categoria)
         {
             return View();
             //Return View("Privacy") Outra forma de chamar a view caso o nome
