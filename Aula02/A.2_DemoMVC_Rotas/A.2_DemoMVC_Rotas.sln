@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A.2_DemoMVC_Rotas", "A.2_De
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula01", "Aula01", "{DAD2F307-720A-47BA-8FD3-EDC1B6FA540B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aula02", "Aula02", "{9E3E46FC-4659-46FB-A6ED-C5FA95FC9CA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A.2.1_DemoMvcAtributteRoutes", "A.2.1_DemoMvcAtributteRoutes\A.2.1_DemoMvcAtributteRoutes.csproj", "{58159445-09C5-4700-A43D-F2E13F332852}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{8E099EC6-FE76-4293-ABA2-3034DC58B485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E099EC6-FE76-4293-ABA2-3034DC58B485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E099EC6-FE76-4293-ABA2-3034DC58B485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58159445-09C5-4700-A43D-F2E13F332852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58159445-09C5-4700-A43D-F2E13F332852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58159445-09C5-4700-A43D-F2E13F332852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58159445-09C5-4700-A43D-F2E13F332852}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8E099EC6-FE76-4293-ABA2-3034DC58B485} = {DAD2F307-720A-47BA-8FD3-EDC1B6FA540B}
+		{58159445-09C5-4700-A43D-F2E13F332852} = {9E3E46FC-4659-46FB-A6ED-C5FA95FC9CA8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39D7B86B-2D3C-49E3-A0DA-2BAE0F4941BB}
