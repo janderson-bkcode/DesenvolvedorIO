@@ -20,7 +20,7 @@ namespace A2._3_DemoMVCResults.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Privacy() 
         {
             //return Json("{nome:Eduardo}");
             var fileBytes = System.IO.File.ReadAllBytes(@"c:\arquivo.txt");
