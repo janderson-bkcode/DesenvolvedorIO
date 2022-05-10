@@ -23,9 +23,11 @@ namespace A2._3_DemoMVCResults.Controllers
         public IActionResult Privacy() 
         {
             //return Json("{nome:Eduardo}");
-            var fileBytes = System.IO.File.ReadAllBytes(@"c:\arquivo.txt");
-            var filename = "arquivos.txt";
-            return File(fileBytes,System.Net.Mime.MediaTypeNames.Application.Octet,filename);
+            //var fileBytes = System.IO.File.ReadAllBytes(@"c:\arquivo.txt");
+            //var filename = "arquivos.txt";
+            //return File(fileBytes,System.Net.Mime.MediaTypeNames.Application.Octet,filename);
+
+            return Content("Qualquer coisa");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
