@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6s9LsspaSBxEQW1LVPuGMOyt6GsdhfuTj6ALatO3auBzs8LsgSIQrBpHrlMCrCI+BexcZiPeklITfcZ1eF6DXA==",
+  "dgSpecHash": "MwuRm5VFT5k0GYqN5d8ATwPMYOouTFcF+yNxO1BvOXlgJdiYH1ryU0qjweqYgxEWnJ6ZfqpreyKZQBWLQjcAlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A.2.1_DemoMvcAtributteRoutes\\A.2.1_DemoMvcAtributteRoutes.csproj",
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A.2.1_DemoMvcAtributteRoutes\\A.2.1_DemoMvcAtributteRoutes.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

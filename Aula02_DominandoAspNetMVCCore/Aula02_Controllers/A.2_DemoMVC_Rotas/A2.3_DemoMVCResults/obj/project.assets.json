@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A2.3_DemoMVCResults\\A2.3_DemoMVCResults.csproj",
+      "projectUniqueName": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A2.3_DemoMVCResults\\A2.3_DemoMVCResults.csproj",
       "projectName": "A2.3_DemoMVCResults",
-      "projectPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A2.3_DemoMVCResults\\A2.3_DemoMVCResults.csproj",
+      "projectPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A2.3_DemoMVCResults\\A2.3_DemoMVCResults.csproj",
       "packagesPath": "C:\\Users\\janderson.goncalves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A2.3_DemoMVCResults\\obj\\",
+      "outputPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula02_Controllers\\A.2_DemoMVC_Rotas\\A2.3_DemoMVCResults\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
