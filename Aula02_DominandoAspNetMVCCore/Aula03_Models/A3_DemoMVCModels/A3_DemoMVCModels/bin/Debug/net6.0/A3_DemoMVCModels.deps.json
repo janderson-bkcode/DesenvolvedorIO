@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "A3_DemoMVCModels/1.0.0": {
+        "runtime": {
+          "A3_DemoMVCModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "A3_DemoMVCModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
