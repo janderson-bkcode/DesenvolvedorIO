@@ -1,6 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
+
+<!-- Formas para Chamar uma Partial View -->
+<partial name="_AvisoGeral"></partial>
+<partial name="_AvisoGeral.cshtml"></partial>
+@await Html.PartialAsync("_AvisoGeral")
+
+
+
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
