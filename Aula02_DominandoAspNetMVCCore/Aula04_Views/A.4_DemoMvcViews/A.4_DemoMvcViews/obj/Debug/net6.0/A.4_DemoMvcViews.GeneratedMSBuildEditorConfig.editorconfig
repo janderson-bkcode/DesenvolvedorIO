@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula04_Views\A.4_DemoMvcViews\A.4_DemoMvcViews
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/janderson.goncalves/Documents/Github/DesenvolvedorIO/Aula02_DominandoAspNetMVCCore/Aula04_Views/A.4_DemoMvcViews/A.4_DemoMvcViews/Views/Filmes/Adicionar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbWVzXEFkaWNpb25hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/janderson.goncalves/Documents/Github/DesenvolvedorIO/Aula02_DominandoAspNetMVCCore/Aula04_Views/A.4_DemoMvcViews/A.4_DemoMvcViews/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

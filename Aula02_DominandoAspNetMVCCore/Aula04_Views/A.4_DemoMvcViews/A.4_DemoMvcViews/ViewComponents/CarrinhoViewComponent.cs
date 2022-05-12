@@ -5,6 +5,8 @@ namespace A._4_DemoMvcViews.ViewComponents
 
     // Aula 4.6 ViewComponents
 {  //Passo 1 criar classe do ViewComponent
+
+    //Nomeando a ViewComponent para ser chamada pelas outras Views
     [ViewComponent(Name = "Carrinho")]
     public class CarrinhoViewComponent : ViewComponent
     {

@@ -1,0 +1,42 @@
+﻿@model A._4_DemoMvcViews.Models.Filme
+<!---Acima definindo que esta view está conectada a Model Filme-->
+@{
+    ViewData["Title"] = "Adicinar Novo Filme";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Adicionar">
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+            </div>    
+            
+            <div class="form-group">
+                <label asp-for="DataLancamento" class="control-label"></label>
+                <input asp-for="DataLancamento" class="form-control" />
+            </div>      
+            
+            <div class="form-group">
+                <label asp-for="Genero" class="control-label"></label>
+                <input asp-for="Genero" class="form-control" />
+            </div>          
+            
+            <div class="form-group">
+                <label asp-for="Valor" class="control-label"></label>
+                <input asp-for="Valor" class="form-control" />
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="Avaliacao" class="control-label"></label>
+                <input asp-for="Avaliacao" class="form-control" />
+            </div> 
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Adicionar"></input>
+            </div>
+
+        </form>
+    </div>
+</div>
