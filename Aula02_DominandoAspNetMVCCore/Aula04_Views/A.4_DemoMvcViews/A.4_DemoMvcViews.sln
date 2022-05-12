@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A.4_DemoMvcViews", "A.4_DemoMvcViews\A.4_DemoMvcViews.csproj", "{980B4366-23D0-4F77-A9A8-C77E5C07115A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A.4_DemoMvcViews", "A.4_DemoMvcViews\A.4_DemoMvcViews.csproj", "{980B4366-23D0-4F77-A9A8-C77E5C07115A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A2.12_DemoMvcScaffold", "A2.12_DemoMvcScaffold\A2.12_DemoMvcScaffold.csproj", "{52375517-4519-4190-9D46-4A55B1A3BA5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{980B4366-23D0-4F77-A9A8-C77E5C07115A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{980B4366-23D0-4F77-A9A8-C77E5C07115A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{980B4366-23D0-4F77-A9A8-C77E5C07115A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52375517-4519-4190-9D46-4A55B1A3BA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52375517-4519-4190-9D46-4A55B1A3BA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52375517-4519-4190-9D46-4A55B1A3BA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52375517-4519-4190-9D46-4A55B1A3BA5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

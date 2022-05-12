@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using A._4_DemoMvcViews.Models;
 
 namespace A._4_DemoMvcViews.Controllers
 {
@@ -10,5 +11,17 @@ namespace A._4_DemoMvcViews.Controllers
         {
             return View();
         }
+        
+        [HttpPost]
+        public IActionResult Adicionar(Filme filme)
+        {
+            if (ModelState.IsValid)
+            {
+                //
+            }
+            return View(filme);
+        }
+
+
     }
 }
