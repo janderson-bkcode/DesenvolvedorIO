@@ -28,6 +28,9 @@
                         </li>
                     </ul>
                 </div>
+                @* // Aula 4.6 ViewComponents
+                    {  //Passo 3 Chamar Component*@
+
                 <!--Chamando o View Component Carrinho-->
                 <vc:Carrinho></vc:Carrinho>
             </div>
@@ -42,8 +45,9 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - A._4_DemoMvcViews - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <vc:Carrinho></vc:Carrinho>
         </div>
-        <vc:Carrinho></vc:Carrinho>
+        
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
