@@ -17,7 +17,7 @@ namespace A3_DemoMVCModels.Models
 
 
         //Validando o tipo de Data, ou seja, deve receber dateTime
-        [DataType(DataType.DateTime, ErrorMessage = "Data em formaro incorreto")]
+        [DataType(DataType.DateTime, ErrorMessage = "Data em formato incorreto")]
         [Required(ErrorMessage = "O Campo Data de Lançamento é obrigatório")]
         //Setando o nome da propriedade a ser exibido para o usuário
         [Display(Name ="Data de Lançamento")]
