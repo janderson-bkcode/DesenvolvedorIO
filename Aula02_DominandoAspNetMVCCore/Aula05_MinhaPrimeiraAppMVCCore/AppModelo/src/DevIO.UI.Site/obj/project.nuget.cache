@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "tWlEgNRUWQphBIVrYpQAbpydA6o9Uj8ZBwyKc05mMQ/WTguDPkfvvyPhUGaxuVTG9PR2Zn9DY9XplI/lXxWHRA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\DevIO.UI.Site.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\ikvm\\8.1.5717\\ikvm.8.1.5717.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'IKVM 8.1.5717' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "IKVM",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
