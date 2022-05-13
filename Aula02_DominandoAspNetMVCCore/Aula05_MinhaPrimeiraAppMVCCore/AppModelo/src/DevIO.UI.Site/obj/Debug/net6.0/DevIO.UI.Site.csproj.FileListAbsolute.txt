@@ -1,5 +1,8 @@
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\appsettings.json
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\bundleconfig.json
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\libman.json
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\DevIO.UI.Site.staticwebassets.runtime.json
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\DevIO.UI.Site.exe
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\DevIO.UI.Site.deps.json
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\DevIO.UI.Site.runtimeconfig.json
@@ -39,6 +42,8 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAs
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.AssemblyInfo.cs
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.csproj.CoreCompileInputs.cache
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.RazorAssemblyInfo.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.RazorAssemblyInfo.cs
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\scopedcss\bundle\DevIO.UI.Site.styles.css
@@ -48,7 +53,3 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAs
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.pdb
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.genruntimeconfig.cache
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\ref\DevIO.UI.Site.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.RazorAssemblyInfo.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.RazorAssemblyInfo.cs
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\libman.json
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\DevIO.UI.Site.staticwebassets.runtime.json

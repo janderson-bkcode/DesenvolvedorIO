@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vj+wlGqwHw8fJR1YSpdPpwnTRk3DeDSksekSvYrzzss=",
+  "Hash": "hW/UX9Irw9ZQtzH4jxIl+RZILhFL2VYU/HXxu9WZ8wI=",
   "Source": "DevIO.UI.Site",
   "BasePath": "_content/DevIO.UI.Site",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\css\\site.css",
+      "SourceId": "DevIO.UI.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\",
+      "BasePath": "_content/DevIO.UI.Site",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\js\\site.js",
+      "SourceId": "DevIO.UI.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\",
+      "BasePath": "_content/DevIO.UI.Site",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
     {
       "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
       "SourceId": "DevIO.UI.Site",
