@@ -22,6 +22,8 @@ namespace DevIO.UI.Site
             {
                 app.UseDeveloperExceptionPage();
             }
+            //Com essa linha podemos usar os arquivos Jquery e Boostrap estáticos que estão no wwwroot estaticos para o browser reconhecer
+            app.UseStaticFiles();
 
             //app.Run(async (context) =>
             //{

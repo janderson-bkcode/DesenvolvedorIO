@@ -50,3 +50,5 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAs
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\ref\DevIO.UI.Site.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.RazorAssemblyInfo.cache
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\obj\Debug\net6.0\DevIO.UI.Site.RazorAssemblyInfo.cs
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\libman.json
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula02_DominandoAspNetMVCCore\Aula05_MinhaPrimeiraAppMVCCore\AppModelo\src\DevIO.UI.Site\bin\Debug\net6.0\DevIO.UI.Site.staticwebassets.runtime.json
