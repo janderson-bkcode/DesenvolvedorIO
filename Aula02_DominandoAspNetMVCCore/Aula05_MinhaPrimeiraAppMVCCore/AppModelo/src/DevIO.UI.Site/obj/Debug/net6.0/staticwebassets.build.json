@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hW/UX9Irw9ZQtzH4jxIl+RZILhFL2VYU/HXxu9WZ8wI=",
+  "Hash": "KHqBm7qjDvuowXR86Fnorj8RSSZiqfs5LWoYDzsJ/+o=",
   "Source": "DevIO.UI.Site",
   "BasePath": "_content/DevIO.UI.Site",
   "Mode": "Default",
@@ -34,6 +34,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\css\\site_bundle.min.css",
+      "SourceId": "DevIO.UI.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\",
+      "BasePath": "_content/DevIO.UI.Site",
+      "RelativePath": "css/site_bundle.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site_bundle.min.css"
+    },
+    {
       "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\js\\site.js",
       "SourceId": "DevIO.UI.Site",
       "SourceType": "Discovered",
@@ -49,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\js\\site_bundle.min.js",
+      "SourceId": "DevIO.UI.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\",
+      "BasePath": "_content/DevIO.UI.Site",
+      "RelativePath": "js/site_bundle.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site_bundle.min.js"
     },
     {
       "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
