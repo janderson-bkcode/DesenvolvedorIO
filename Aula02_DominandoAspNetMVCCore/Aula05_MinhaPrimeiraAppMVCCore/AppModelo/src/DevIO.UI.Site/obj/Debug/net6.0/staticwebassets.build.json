@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KHqBm7qjDvuowXR86Fnorj8RSSZiqfs5LWoYDzsJ/+o=",
+  "Hash": "0x5RWatIyAyZiUIBTyq2LHTnM/FZ4Qd5SfFgQZD68uA=",
   "Source": "DevIO.UI.Site",
   "BasePath": "_content/DevIO.UI.Site",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "SourceId": "DevIO.UI.Site",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\",
+      "BasePath": "_content/DevIO.UI.Site",
+      "RelativePath": "lib/bootstrap/js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js"
     },
     {
       "Identity": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo\\src\\DevIO.UI.Site\\wwwroot\\lib\\font-awesome\\css\\all.css",
