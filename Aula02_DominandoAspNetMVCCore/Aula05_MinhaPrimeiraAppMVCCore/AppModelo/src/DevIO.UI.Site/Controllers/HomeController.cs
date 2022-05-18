@@ -14,11 +14,12 @@ namespace DevIO.UI.Site.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("")] 
+        [Route("pagina-inicial")]
+        [Route("pagina-inicial/{id}/{categoria?}")]
         public IActionResult Index()
         {
             return View();
         }
-
-
     }
 }
