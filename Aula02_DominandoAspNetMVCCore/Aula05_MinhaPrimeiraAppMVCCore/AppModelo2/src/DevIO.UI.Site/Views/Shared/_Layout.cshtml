@@ -1,0 +1,20 @@
+﻿
+<html>
+    
+    <head>
+        <title>@ViewData["Title"]</title>
+
+    </head>
+     
+    <body>
+        <!--Chamando Partial View-->
+        @await Html.PartialAsync("_AvisoGeral")
+        <partial name ="_AvisoGeral" />
+        @RenderBody()
+        <header>Menu</header>
+        <footer>Rodapé</footer>
+        <vc:Carrinho></vc:Carrinho> @*<!---Chamando ViewComponent Carrinho->*@
+        <a asp-controller="Filme"asp-action="Adicionar">Adicionar Filmes</a>
+    </body>
+
+</html>
