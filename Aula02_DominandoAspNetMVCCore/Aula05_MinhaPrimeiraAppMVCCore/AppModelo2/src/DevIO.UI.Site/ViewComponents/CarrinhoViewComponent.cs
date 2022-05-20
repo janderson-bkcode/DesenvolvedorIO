@@ -5,8 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace DevIO.UI.Site.ViewsComponents
- {
+namespace DevIO.UI.Site.ViewsComponents {
 
     [ViewComponent(Name ="Carrinho")]
     public class CarrinhoViewComponent : ViewComponent

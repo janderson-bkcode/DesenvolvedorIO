@@ -6,6 +6,8 @@ namespace DevIO.UI.Site.Models
 {
     public class Filme
     {
+
+        [Display(Name ="Titulo")]
         public string Titulo { get; set; }
 
         [Display(Name = "Gênero")]
@@ -15,9 +17,5 @@ namespace DevIO.UI.Site.Models
         [Display(Name = "Data de Lancamento")]
         public DateTime DataLancamento { get; set; }
 
-        public Filme()
-        {
-
-        }
     }
 }
