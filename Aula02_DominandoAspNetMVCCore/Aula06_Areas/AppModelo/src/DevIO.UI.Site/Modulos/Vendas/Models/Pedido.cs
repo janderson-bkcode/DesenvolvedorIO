@@ -1,4 +1,4 @@
-﻿namespace DevIO.UI.Site.Models
+﻿namespace DevIO.UI.Site.Modulos.Vendas.Models
 {
     public class Pedido
     {
@@ -6,7 +6,7 @@
 
         public Pedido()
         {
-            Id = Guid.NewGuid();    
+            Id = Guid.NewGuid();
         }
     }
 }

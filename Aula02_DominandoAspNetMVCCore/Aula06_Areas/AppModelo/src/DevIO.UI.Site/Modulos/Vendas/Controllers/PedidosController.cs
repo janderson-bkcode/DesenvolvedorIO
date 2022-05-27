@@ -1,4 +1,4 @@
-﻿using DevIO.UI.Site.Data;
+﻿using DevIO.UI.Site.Modulos.Produtos.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevIO.UI.Site.Areas.Vendas.Controllers
