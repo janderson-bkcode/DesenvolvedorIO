@@ -1,4 +1,4 @@
-﻿using DevIO.UI.Site.Models;
+﻿using DevIO.UI.Site.Modulos.Vendas.Models;
 
 namespace DevIO.UI.Site.Modulos.Vendas.Data
 {

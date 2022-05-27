@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Mvc.Razor;
-using DevIO.UI.Site.Modulos.Produtos.Data;
+using DevIO.UI.Site.Modulos.Vendas.Data;
 
 namespace DevIO.UI.Site
 {
