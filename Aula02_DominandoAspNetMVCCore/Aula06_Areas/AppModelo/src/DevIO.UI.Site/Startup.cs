@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc.Razor;
+using DevIO.UI.Site.Data;
 
 namespace DevIO.UI.Site
 {
@@ -12,8 +14,22 @@ namespace DevIO.UI.Site
         //For more information on how to configure your application,visit http://go.microsoft.com/fwlink/?/LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+
             //Chamando o serviço do MVC
             services.AddMvc(options => options.EnableEndpointRouting = false);
+
+            //Aula 06 Areas
+            // Caso você queira mudar o nome da pasta Areas para outro nome , neste caso mudamos para Mòdulos
+            services.Configure<RazorViewEngineOptions>(options =>
+            {
+                options.AreaViewLocationFormats.Clear();
+                options.AreaViewLocationFormats.Add(item: "/Modulos/{2}/Views/{1}/{0}.cshtml");
+                options.AreaViewLocationFormats.Add(item: "/Modulos/{2}/Views/Shared/{0}.cshtml");
+                options.AreaViewLocationFormats.Add(item: "Views/Shared/{0}.cshtml");
+            });
+
+            services.AddTransient<IPedidoRepository, PedidoRepository>();
+             
         }
 
         //This method gets called by the runTime. Use this method to configure the HTTP request pipeline
@@ -38,9 +54,12 @@ namespace DevIO.UI.Site
                   name: "areas",
                   template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                //routes.MapRoute(
+                //    name: "default",
+                //    template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapAreaRoute(name: "AreaProdutos", areaName: "Produtos", template: "Produtos/{controller=Cadastro}/{action=Index}/{id?}");
+                routes.MapAreaRoute(name: "AreaVendas", areaName: "Vendas", template: "Vendas/{controller=Pedidos}/{action=Index}/{id?}");
             });
 
         }

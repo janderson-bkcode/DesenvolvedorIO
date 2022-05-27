@@ -13,8 +13,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Produtos\Data\" />
-    <Folder Include="Areas\Produtos\Models\" />
+    <Folder Include="Modulos\Vendas\Data\" />
+    <Folder Include="Modulos\Vendas\Models\" />
+    <Folder Include="Modulos\Produtos\Data\" />
+    <Folder Include="Modulos\Produtos\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Modulos\Produtos\Views\Cadastro\Busca.cshtml" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties bundleconfig_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
