@@ -19,12 +19,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHV0b3NcVmlld3NcQ2FkYXN0cm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/janderson.goncalves/Documents/Github/DesenvolvedorIO/Aula02_DominandoAspNetMVCCore/Aula06_Areas/AppModelo/src/DevIO.UI.Site/Areas/Produtos/Views/Teste/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHV0b3NcVmlld3NcVGVzdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/janderson.goncalves/Documents/Github/DesenvolvedorIO/Aula02_DominandoAspNetMVCCore/Aula06_Areas/AppModelo/src/DevIO.UI.Site/Areas/Produtos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHV0b3NcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/janderson.goncalves/Documents/Github/DesenvolvedorIO/Aula02_DominandoAspNetMVCCore/Aula06_Areas/AppModelo/src/DevIO.UI.Site/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/janderson.goncalves/Documents/Github/DesenvolvedorIO/Aula02_DominandoAspNetMVCCore/Aula06_Areas/AppModelo/src/DevIO.UI.Site/Views/Shared/Components/Carrinho/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FycmluaG9cRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/janderson.goncalves/Documents/Github/DesenvolvedorIO/Aula02_DominandoAspNetMVCCore/Aula06_Areas/AppModelo/src/DevIO.UI.Site/Views/Shared/_Layout.cshtml]
