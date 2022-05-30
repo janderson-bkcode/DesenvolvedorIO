@@ -16,6 +16,7 @@
     <Folder Include="Data\" />
     <Folder Include="Models\" />
     <Folder Include="Modulos\Produtos\Data\" />
+    <Folder Include="Servicos\" />
   </ItemGroup>
 
   <ItemGroup>
