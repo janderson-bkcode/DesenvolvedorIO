@@ -1,6 +1,7 @@
 ﻿namespace DevIO.UI.Site.Servicos
 {
-    public interface IOperacaoScoped
-    {
+    public interface IOperacaoScoped : IOperacao { 
+
+
     }
 }

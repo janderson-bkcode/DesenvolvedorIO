@@ -1,6 +1,6 @@
 ﻿namespace DevIO.UI.Site.Servicos
 {
-    public interface IOperacaoTransient
+    public interface IOperacaoTransient : IOperacao
     {
     }
 }

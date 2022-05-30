@@ -28,7 +28,9 @@ namespace DevIO.UI.Site.Controllers
             OperacaoService = operacaoService;
             OperacaoService2 = operacaoService2;
         }
-
+        [Route("")]
+        [Route("pagina-inicial")]
+        [Route("pagina-inicial/{id}/{categoria?}")]
         public string Index()
         {
             return
@@ -48,9 +50,9 @@ namespace DevIO.UI.Site.Controllers
                 OperacaoService2.SingletonInstance.OperacaoId + Environment.NewLine;
         }
 
-        [Route("")] 
-        [Route("pagina-inicial")]
-        [Route("pagina-inicial/{id}/{categoria?}")]
+        //[Route("")] 
+        //[Route("pagina-inicial")]
+        //[Route("pagina-inicial/{id}/{categoria?}")]
         //public IActionResult Index()
         //{
         //    return View();
