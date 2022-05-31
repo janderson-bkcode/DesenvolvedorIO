@@ -1,4 +1,4 @@
-﻿using DevIO.UI.Site.Modulos.Vendas.Data;
+﻿ using DevIO.UI.Site.Modulos.Vendas.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DevIO.UI.Site.Areas.Vendas.Controllers
@@ -22,5 +22,16 @@ namespace DevIO.UI.Site.Areas.Vendas.Controllers
         {
             return View();
         }
+        //No caso em que não consegue injetar direto  num construtor em sitema legado
+        //existe uma alternativa não recomendada para fazer injeção dependencia
+        //direto método baixo
+
+        public IActionResult Teste3([FromServices] IPedidoRepository pedidoRepository1)
+        {
+            var pedido = _pedidoRepository.ObterPedido();
+            return View();
+        }
+
+
     }
 }
