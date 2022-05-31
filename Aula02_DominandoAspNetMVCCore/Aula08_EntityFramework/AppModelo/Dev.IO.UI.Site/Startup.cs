@@ -16,7 +16,7 @@ namespace DevIO.UI.Site
         //For more information on how to configure your application,visit http://go.microsoft.com/fwlink/?/LinkID=398940
 
 
-        //Aula 08  parte 03 Criando configuration e injetando no construtor para passar na options do services.AddDbContext abaixo
+        //Aula 08  passo 03 Criando configuration e injetando no construtor para passar na options do services.AddDbContext abaixo
         public IConfiguration Configuration { get; }
 
         public Startup(IConfiguration configuration)
@@ -27,8 +27,9 @@ namespace DevIO.UI.Site
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //Aula 08  parte 01 Entity configurando o DBcontext depois ir em appsettings.json
+            //Aula 08  passo 01 Entity configurando o DBcontext depois ir em appsettings.json
             services.AddDbContext<MeuDbContext>(optionsAction: options =>
+                // Aula 08 passo 04 abaixo depois de fazer o configuration no construtor injetado
                 options.UseSqlServer(Configuration.GetConnectionString(name: "MeuDbContext")));
 
             //Chamando o serviço do MVC
