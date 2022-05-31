@@ -1,5 +1,5 @@
 ﻿namespace Dev.IO.UI.Site.Models
-{//Aula 08.04 CRUD
+{//Aula 08.04 CRUD  passo 1 
     public class Aluno
     {
         public Aluno()
