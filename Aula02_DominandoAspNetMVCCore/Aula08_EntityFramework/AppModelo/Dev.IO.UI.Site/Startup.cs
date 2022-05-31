@@ -15,6 +15,8 @@ namespace DevIO.UI.Site
         //This method gest called by runTime . Use this method to add services to the container.
         //For more information on how to configure your application,visit http://go.microsoft.com/fwlink/?/LinkID=398940
 
+
+        //Aula 08  parte 03 Criando configuration e injetando no construtor para passar na options do services.AddDbContext abaixo
         public IConfiguration Configuration { get; }
 
         public Startup(IConfiguration configuration)
@@ -25,11 +27,13 @@ namespace DevIO.UI.Site
         public void ConfigureServices(IServiceCollection services)
         {
 
+            //Aula 08  parte 01 Entity configurando o DBcontext depois ir em appsettings.json
+            services.AddDbContext<MeuDbContext>(optionsAction: options =>
+                options.UseSqlServer(Configuration.GetConnectionString(name: "MeuDbContext")));
+
             //Chamando o serviço do MVC
             services.AddMvc(options => options.EnableEndpointRouting = false);
 
-            services.AddDbContext<MeuDbContext>(optionsAction:options =>
-                options.UseSqlServer(Configuration.GetConnectionString(name: "MeuDbContext")));
 
         }
 
