@@ -3,10 +3,14 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Dev.IO.UI.Site.Migrations
-{
+namespace Dev.IO.UI.Site.Migrations { 
+    /// <summary>
+    /// Classe com o nome que foi dado no comando migration
+    /// representa as ações do migration
+    /// </summary>
     public partial class Inicial : Migration
     {
+        // Método para aplicar o Migration e  Cria a tabela no db conforme a model Aluno e
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -23,7 +27,7 @@ namespace Dev.IO.UI.Site.Migrations
                     table.PrimaryKey("PK_Alunos", x => x.Id);
                 });
         }
-
+        //Método para desfazer a migration e deletar a tabela
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

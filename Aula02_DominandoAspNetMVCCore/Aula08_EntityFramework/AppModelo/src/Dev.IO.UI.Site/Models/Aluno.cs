@@ -12,6 +12,9 @@
 
         public DateTime DataNascimento { get; set; }
 
+        public int Nota { get; set; }
+
+
 
     }
 }

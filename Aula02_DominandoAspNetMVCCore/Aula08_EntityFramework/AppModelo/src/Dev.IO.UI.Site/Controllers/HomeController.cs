@@ -27,7 +27,7 @@ namespace DevIO.UI.Site.Controllers
             OperacaoService = operacaoService;
             OperacaoService2 = operacaoService2;
         }
-        [Route("")]
+        
         [Route("pagina-inicial")]
         [Route("pagina-inicial/{id}/{categoria?}")]
         public string Index()

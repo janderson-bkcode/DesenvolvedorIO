@@ -11,9 +11,9 @@ namespace Dev.IO.UI.Site.Controllers
 
         public TesteCrudController(MeuDbContext contexto)
         {
-            contexto = _contexto;
+            _contexto = contexto;
         }
-
+        [Route("")]
         public IActionResult Index()
         {
             var aluno = new Aluno
@@ -21,6 +21,7 @@ namespace Dev.IO.UI.Site.Controllers
                 Nome = "Eduardo",
                 Email = "eduardo@gmail.com",
                 DataNascimento = DateTime.Now,
+                Nota = 10
             };
             _contexto.Alunos.Add(aluno);
 
@@ -45,7 +46,7 @@ namespace Dev.IO.UI.Site.Controllers
             //Excluindo
             _contexto.Alunos.Remove(aluno);
 
-            return View();
+            return View("_Layout");
         }
     }
 }
