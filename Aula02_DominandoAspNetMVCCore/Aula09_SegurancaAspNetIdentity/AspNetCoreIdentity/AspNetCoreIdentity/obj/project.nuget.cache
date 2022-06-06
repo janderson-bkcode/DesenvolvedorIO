@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Eul5tixIAmPtf7q3PvD66Z77/MO9Tx3mTdyph2wKtK2Y3BIfdamdyFBjgq1eRBS/dOOxwfC/S5M5wqu3oE4fA==",
+  "dgSpecHash": "tlh4z3CmXBSutS+zszRVPoiXxCH2hOE982efSbbcyQk6z7RmgKCRlQ/s6RWOuYArG3pn3v3QWSYmA5sOjOfMXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula08_EntityFramework\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

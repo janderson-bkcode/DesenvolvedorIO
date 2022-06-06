@@ -9844,11 +9844,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula08_EntityFramework\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
+      "projectUniqueName": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
       "projectName": "AspNetCoreIdentity",
-      "projectPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula08_EntityFramework\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
+      "projectPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity.csproj",
       "packagesPath": "C:\\Users\\janderson.goncalves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula08_EntityFramework\\AspNetCoreIdentity\\AspNetCoreIdentity\\obj\\",
+      "outputPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula02_DominandoAspNetMVCCore\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
