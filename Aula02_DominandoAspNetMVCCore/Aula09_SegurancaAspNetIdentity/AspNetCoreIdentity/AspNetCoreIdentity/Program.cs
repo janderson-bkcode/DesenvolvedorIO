@@ -38,7 +38,7 @@ builder.Services.AddAuthorization(options => {
 
 });
 
-//Injeção de dependência 
+//Injeção de dependência  
 builder.Services.AddSingleton<IAuthorizationHandler, PermissaoNecessariaHandler>();
 
 
