@@ -38,6 +38,7 @@ namespace AspNetCoreIdentity.Extensions
 
         public void OnAuthorization(AuthorizationFilterContext context)
         {
+            //Não estãndo autenticado será redirecionado para a pagina de login
             if (!context.HttpContext.User.Identity.IsAuthenticated)
             {
                 context.Result = new RedirectToRouteResult(new RouteValueDictionary(values: new { area = "Identity", page = "/Account/Login", ReturnUrl = context.HttpContext.Request.Path.ToString() }));

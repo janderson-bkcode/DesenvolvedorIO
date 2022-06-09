@@ -1,0 +1,70 @@
+﻿@{
+     ViewData["Title"] = "Animangá";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> @ViewData["Title"]</title>
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="../../icon/favicon.ico">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header>
+        <nav class="nav-extended light-blue darken-2">
+            <div class="nav-wrapper ">
+                <ul id="nav-mobile" class="right">
+                    <li>
+                        <a href="{% url 'logout' %}" style="margin-right:30px;">Sair</a>
+                    </li>
+
+                    <li>
+                        <a class="active" style="margin-right:30px;">Olá</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'admin:index' %}"><i class=" fa-solid fa-gear align-center " style="color:antiquewhite "></i></a>
+                    </li>
+                    <li>
+                        <a >Login</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'register' %} ">Cadastro</a>
+                    </li>
+            </div>
+            <div class="nav-header center ">
+                <a href="{% url 'home' %} ">
+                    <h1>Projeto Animangá</h1>
+                </a>
+            </div>
+            <div class="nav-content ">
+                <ul class="tabs tabs-transparent blue-grey darken-4 ">
+                    <li class="tab ">
+                        <a asp-controller="Anime" asp-action="Index">Home</a>
+                    </li>
+                    <li class="tab ">
+                        <a href="/animes ">Animes</a>
+                    </li>
+                    <li class="tab ">
+                        <a href="/mangas ">Mangás</a>
+                    </li>
+                    <li class="tab ">
+                        <a href="/season ">Temporadas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>

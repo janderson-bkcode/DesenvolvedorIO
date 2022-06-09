@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AspNetCoreIdentity.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="../Areas/Anime/css/style.css">
 </head>
 <body>
     <header>
@@ -22,6 +23,9 @@
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Anime" asp-controller="Anime" asp-action="Index">AnimeProject</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
@@ -32,6 +36,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SecretClaim">Segredo Claim</a>
+                        </li>
+                    </ul>
+                    <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CustomClaim">Custom Claim</a>
                         </li>
                     </ul>
                 </div>

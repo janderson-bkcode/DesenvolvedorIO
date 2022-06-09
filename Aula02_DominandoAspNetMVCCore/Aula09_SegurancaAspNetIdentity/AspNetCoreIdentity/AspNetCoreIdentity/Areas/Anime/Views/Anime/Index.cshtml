@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<partial name="_Header"></partial>
+
+<main>
+    <section class="galeria">
+        <div class="fotos">
+            <img src="https://pbs.twimg.com/media/E-kxaRhXoAA4Hh3.jpg">
+            <img src="https://miro.medium.com/max/1200/1*7kxVRzoikHU8gLZEWoNsgA.jpeg">
+            <img src="https://i.pinimg.com/originals/0a/ac/c1/0aacc1c29c9f5a5a634fc07a1d66f1e3.jpg">
+            <img src="https://i.pinimg.com/originals/7c/44/3b/7c443ba34e614de3a0e3f667f47f3d5b.jpg">
+            <img src="https://pbs.twimg.com/media/E-kxaRhXoAA4Hh3.jpg">
+        </div>
+    </section>
+    <h3 class="center card-panel blue-grey darken-4 white-text">- Animes | Destaques -</h3>
+    <div class="row">
+        <div class="card col s12 m6 l3 ">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="card-img" src="https://miro.medium.com/max/1200/1*7kxVRzoikHU8gLZEWoNsgA.jpeg" alt="{{name}}" />
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                    <span class="card-title"></span><i class="material-icons right">more_vert</i>
+                </span>
+                <p style="word-wrap:break-all; height: 5em "><a href="# ">{{name}}</a></p>
+
+            </div>
+            <div class="card-reveal ">
+                <span class="card-title grey-text text-darken-4 ">
+                    <span class="card-title "></span><i class="material-icons right ">close</i>
+                </span>
+                <p>{{sinopse}}</p><br>
+                <i>Quantidade de capítulos:{{episodios}}</i>
+            </div>
+        </div>
+        <div class="card col s12 m6 l3 ">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="card-img" src="https://i.pinimg.com/originals/0a/ac/c1/0aacc1c29c9f5a5a634fc07a1d66f1e3.jpg" alt="{{name}}" />
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                    <span class="card-title"></span><i class="material-icons right">more_vert</i>
+                </span>
+                <p style="word-wrap:break-all; height: 5em "><a href="# ">Naruto</a></p>
+
+            </div>
+            <div class="card-reveal ">
+                <span class="card-title grey-text text-darken-4 ">
+                    <span class="card-title "></span><i class="material-icons right ">close</i>
+                </span>
+                <p>{{sinopse}}</p><br>
+                <i>Quantidade de capítulos:{{episodios}}</i>
+            </div>
+        </div>
+    </div>
+    <h3 class="center card-panel blue-grey darken-4 white-text">- Mangas | Destaques -</h3>
+    <div class="row">
+        <div class="card col s12 m6 l3 ">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="card-img" src="https://pbs.twimg.com/media/E-kxaRhXoAA4Hh3.jpg" alt="{{name}}" />
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                    <span class="card-title"></span><i class="material-icons right">more_vert</i>
+                </span>
+                <p style="word-wrap:break-all; height: 5em "><a href="# ">{{name}}</a></p>
+
+            </div>
+            <div class="card-reveal ">
+                <span class="card-title grey-text text-darken-4 ">
+                    <span class="card-title "></span><i class="material-icons right ">close</i>
+                </span>
+                <p>{{sinopse}}</p><br>
+                <i>Quantidade de capítulos:{{episodios}}</i>
+            </div>
+        </div>
+        <div class="card col s12 m6 l3 ">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="card-img" src="https://pbs.twimg.com/media/E-kxaRhXoAA4Hh3.jpg" alt="{{name}}" />
+            </div>
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">
+                    <span class="card-title"></span><i class="material-icons right">more_vert</i>
+                </span>
+                <p style="word-wrap:break-all; height: 5em "><a href="# ">{{name}}</a></p>
+
+            </div>
+            <div class="card-reveal ">
+                <span class="card-title grey-text text-darken-4 ">
+                    <span class="card-title "></span><i class="material-icons right ">close</i>
+                </span>
+                <p>{{sinopse}}</p><br>
+                <i>Quantidade de capítulos:{{episodios}}</i>
+            </div>
+        </div>
+    </div>
+</main>
+<partial name="_Footer" />
+<script>
+    $(document).ready(function() {
+        $('.galeria').carousel();
+    });
+</script>
