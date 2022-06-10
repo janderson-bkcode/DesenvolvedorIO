@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Anime\Data\" />
-    <Folder Include="Areas\Anime\Models\" />
   </ItemGroup>
 
 </Project>

@@ -22,6 +22,72 @@ namespace AspNetCoreIdentity.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("AspNetCoreIdentity.Areas.Anime.Models.Animes", b =>
+                {
+                    b.Property<DateTime>("Create_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Kitsu_link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OfficialThumb")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SeasonID1")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Studio")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subtype")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Total_episodes")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Update_at")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("release_Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("userID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasIndex("SeasonID1");
+
+                    b.ToTable("Animes");
+                });
+
+            modelBuilder.Entity("AspNetCoreIdentity.Areas.Anime.Models.Season", b =>
+                {
+                    b.Property<int>("SeasonID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SeasonID"), 1L, 1);
+
+                    b.HasKey("SeasonID");
+
+                    b.ToTable("Season");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -222,6 +288,17 @@ namespace AspNetCoreIdentity.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("AspNetCoreIdentity.Areas.Anime.Models.Animes", b =>
+                {
+                    b.HasOne("AspNetCoreIdentity.Areas.Anime.Models.Season", "SeasonID")
+                        .WithMany()
+                        .HasForeignKey("SeasonID1")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SeasonID");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

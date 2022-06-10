@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "wi7zTOql8mj0xa8a+riTNhJ+vWfW0cwRKh37T0O7sy2XF3lfVWvh/wue+bNUZy4GvM6jiw97r+dFLQiAhmaMJA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula03_RestAspNetCoreWebAPI\\Aula03_NovoProjeto\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
