@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using MinhaPrimeiraAPI2.Data;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +10,25 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "V1",
+        Title = "Api Fornecedores",
+        Description = "Api para Fornecedores",
+        Contact = new OpenApiContact
+        {
+            Name = "SelfPay",
+            Email = String.Empty,
+            Url = new Uri("https://selfpay.com.br/"),
+        }
+
+    });
+
+});
+
+
 builder.Services.AddMvc();
 builder.Services.AddMvcCore();
 
@@ -26,6 +46,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.UseHttpsRedirection();
 
