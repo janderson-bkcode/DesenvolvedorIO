@@ -2,10 +2,11 @@
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using Microsoft.OpenApi.Models;
 
 namespace MinhaPrimeiraAPI2.Config
 {
-        public static class SwaggerConfig
+    public static class SwaggerConfig
     {
 
         public static IServiceCollection AddSwaggerConfig(this IServiceCollection services)
@@ -13,7 +14,7 @@ namespace MinhaPrimeiraAPI2.Config
             services.AddSwaggerGen(c =>
             {
 
-               // c.OperationFilter<SwaggerDefaultValues>();
+                //c.OperationFilter<SwaggerDefaultValues>();
                 //c.SwaggerDoc(name:"v1",new OpenApiInfo { Title="Minha API 2",Version="v1"});
 
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -29,12 +30,48 @@ namespace MinhaPrimeiraAPI2.Config
                     }
 
                 });
+
+                var security = new Dictionary<string, IList<string>>
+                {
+                    {"Bearer",new string[]{} }
+                };
+
+                OpenApiSecurityRequirement x = new OpenApiSecurityRequirement();
+
+                //Configurando Segurança do Swagger
+
+                c.AddSecurityDefinition("Barer", new OpenApiSecurityScheme
+                {
+                    Description = "Insira o Token JWT desta maneira : Bearer {seu token}",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+
+                });
+
+                //c.AddSecurityRequirement(security) Depreciado VideoAula ver abaixo
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                    new OpenApiSecurityScheme
+                    {
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                        },
+                    },
+                    new List<string>()
+                    }
+                });
+
+
             });
 
             return services;
         }
 
-        public static IApplicationBuilder UseSwaggerConfig(this IApplicationBuilder app,IApiVersionDescriptionProvider provider)
+        public static IApplicationBuilder UseSwaggerConfig(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
         {
 
             app.UseSwagger();
@@ -42,7 +79,7 @@ namespace MinhaPrimeiraAPI2.Config
             {
                 foreach (var description in provider.ApiVersionDescriptions)
                 {
-                    options.SwaggerEndpoint(url:$"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+                    options.SwaggerEndpoint(url: $"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                 }
             });
             return app;
@@ -50,71 +87,97 @@ namespace MinhaPrimeiraAPI2.Config
         }
     }
 
-        public class SwaggerDefaultValues : IOperationFilter
+    public class SwaggerDefaultValues : IOperationFilter
+    {
+        public void Apply(OpenApiOperation operation, OperationFilterContext context)
         {
-            public void Apply(OpenApiOperation operation, OperationFilterContext context)
+            var apiDescription = context.ApiDescription;
+
+            operation.Deprecated = apiDescription.IsDeprecated();
+
+            if (operation.Parameters == null)
             {
-                var apiDescription = context.ApiDescription;
+                return;
+            }
 
-                operation.Deprecated = apiDescription.IsDeprecated();
+            foreach (var parameter in operation.Parameters.OfType<OpenApiParameter>())
+            {
+                var description = apiDescription.ParameterDescriptions.First(p => p.Name == parameter.Name);
 
-                if (operation.Parameters == null)
+                if (parameter.Description == null)
                 {
-                    return;
+                    parameter.Description = description.ModelMetadata?.Description;
                 }
+                //if (parameter.Default == null)
+                //{
+                //    parameter.Default = description.DefaultValue;
+                //}
 
-                foreach (var parameter in operation.Parameters.OfType<OpenApiParameter>())
-                {
-                    var description = apiDescription.ParameterDescriptions.First(p => p.Name == parameter.Name);
+                parameter.Required |= description.IsRequired;
+            }
+        }
+    }
 
-                    if (parameter.Description == null)
-                    {
-                        parameter.Description = description.ModelMetadata?.Description;
-                    }
-                    //if (parameter.Default == null)
-                    //{
-                    //    parameter.Default = description.DefaultValue;
-                    //}
 
-                    parameter.Required |= description.IsRequired;
-                }
+    public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
+    {
+        readonly IApiVersionDescriptionProvider provider;
+
+        public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => this.provider = provider;
+        public void Configure(SwaggerGenOptions options)
+        {
+            //Pega todas as minhas versões da Api e adiciona uma doc para cada uma delas
+            foreach (var description in provider.ApiVersionDescriptions)
+            {
+                options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
             }
         }
 
-
-        public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
+        static OpenApiInfo CreateInfoForApiVersion(ApiVersionDescription description)
         {
-            readonly IApiVersionDescriptionProvider provider;
-
-            public ConfigureSwaggerOptions(IApiVersionDescriptionProvider provider) => this.provider = provider;
-            public void Configure(SwaggerGenOptions options)
+            var info = new OpenApiInfo()
             {
-                //Pega todas as minhas versões da Api e adiciona uma doc para cada uma delas
-                foreach (var description in provider.ApiVersionDescriptions)
-                {
-                    options.SwaggerDoc(description.GroupName, CreateInfoForApiVersion(description));
-                }
+                Title = "Api -  desenvolvedor IO",
+                Version = description.ApiVersion.ToString(),
+                Description = "Esta API faz´parte do curso REST com ASP.NET Core WebAPI",
+                Contact = new OpenApiContact() { Name = "Eduardo Pires", Email = "contato@dev.IO" },
+                TermsOfService = new Uri("https://opensource.org/license/MIT"),
+                License = new OpenApiLicense { Name = "MIT", Url = new Uri("https://opensource.org/license/MIT") }
+            };
+
+            if (description.IsDeprecated)
+            {
+                info.Description += "Está versão está obsoleta";
             }
 
-            static OpenApiInfo CreateInfoForApiVersion(ApiVersionDescription description)
-            {
-                var info = new OpenApiInfo()
-                {
-                    Title = "Api -  desenvolvedor IO",
-                    Version = description.ApiVersion.ToString(),
-                    Description = "Esta API faz´parte do curso REST com ASP.NET Core WebAPI",
-                    Contact = new OpenApiContact() { Name = "Eduardo Pires", Email = "contato@dev.IO" },
-                    TermsOfService = new Uri("https://opensource.org/license/MIT"),
-                    License = new OpenApiLicense { Name = "MIT", Url = new Uri("https://opensource.org/license/MIT") }
-                };
-
-                if (description.IsDeprecated)
-                {
-                    info.Description += "Está versão está obsoleta";
-                }
-
-                return info;
-            }
+            return info;
         }
-}
+    }
+
+
+    //Classe para acesso restrito
+    public class SwaggerAuthorizedMiddleware
+    {
+        private readonly RequestDelegate _next;
+
+        public SwaggerAuthorizedMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
+
+        public async Task Invoke(HttpContext context)
+        {
+            if (context.Request.Path.StartsWithSegments(other: "/swagger")
+                && !context.User.Identity.IsAuthenticated)
+            {
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                return;
+            }
+
+            await _next.Invoke(context);
+        }
+    }
+
+ }
+
 
