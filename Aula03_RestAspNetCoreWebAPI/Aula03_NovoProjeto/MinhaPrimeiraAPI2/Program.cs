@@ -35,7 +35,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint(url: "/swagger/v1/swagger.json", name: "My Api v1");
-
     }); 
 
 

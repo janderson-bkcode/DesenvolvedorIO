@@ -12,8 +12,10 @@ namespace MinhaPrimeiraAPI2.Config
         {
             services.AddSwaggerGen(c =>
             {
+
+               // c.OperationFilter<SwaggerDefaultValues>();
                 //c.SwaggerDoc(name:"v1",new OpenApiInfo { Title="Minha API 2",Version="v1"});
-                c.OperationFilter<SwaggerDefaultValues>();
+
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
@@ -40,7 +42,7 @@ namespace MinhaPrimeiraAPI2.Config
             {
                 foreach (var description in provider.ApiVersionDescriptions)
                 {
-                    options.SwaggerEndpoint(url: $"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
+                    options.SwaggerEndpoint(url:$"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                 }
             });
             return app;

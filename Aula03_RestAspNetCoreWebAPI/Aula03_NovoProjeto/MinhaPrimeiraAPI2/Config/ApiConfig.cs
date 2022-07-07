@@ -14,7 +14,7 @@ namespace MinhaPrimeiraAPI2.Config
                 //Assume a versão default quando não for especificado
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 //Definindo maior e menor versão
-                options.DefaultApiVersion = new ApiVersion(majorVersion: 2, minorVersion: 0);
+                options.DefaultApiVersion = new ApiVersion(majorVersion: 1, minorVersion: 1);
                 //Quando consumir ele passar no header do response se estã obsoleta ou versão atual
                 options.ReportApiVersions = true;
 
