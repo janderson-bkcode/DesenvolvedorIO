@@ -7,7 +7,7 @@ namespace MinhaPrimeiraAPI2.Config
 
         public static IServiceCollection WebApiConfig(this IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddApiVersioning(options =>
             {

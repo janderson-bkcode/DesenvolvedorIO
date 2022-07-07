@@ -12,8 +12,9 @@ using MinhaPrimeiraAPI2.Models;
 namespace MinhaPrimeiraAPI2.Controllers
 {
     [ApiController]
+    //[Route("api/[controller]")]
     [Route("api/v{version:apiVersion}/fornecedores")]
-    [ApiVersion("2.0")]
+    [ApiVersion("1.0")]
     public class FornecedoresController : ControllerBase
     {
         private readonly APIDbContext _context;
