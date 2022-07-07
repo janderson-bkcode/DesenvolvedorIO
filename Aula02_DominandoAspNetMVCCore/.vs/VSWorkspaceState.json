@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Aula06_Areas\\AppModelo",
+    "\\Aula06_Areas\\AppModelo\\src",
+    "\\Aula06_Areas\\AppModelo\\src\\DevIO.UI.Site",
+    "\\Aula06_Areas\\AppModelo\\src\\DevIO.UI.Site\\Modulos\\Produtos",
+    "\\Aula08_EntityFramework\\AppModelo",
+    "\\Aula08_EntityFramework\\Materiais",
+    "\\Aula09_SegurancaAspNetIdentity",
+    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity",
+    "\\Aula09_SegurancaAspNetIdentity\\Materiais"
+  ],
+  "SelectedNode": "\\Aula08_EntityFramework",
+  "PreviewInSolutionExplorer": false
+}
