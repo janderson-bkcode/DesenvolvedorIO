@@ -12,7 +12,7 @@ using MinhaPrimeiraAPI2.Models;
 namespace MinhaPrimeiraAPI2.Controllers
 {
     [ApiController]
-    [Route("api/v{version:apiVersion}/fornecedores*- ")]
+    [Route("api/v{version:apiVersion}/fornecedores")]
     [ApiVersion("2.0")]
     public class FornecedoresController : ControllerBase
     {
