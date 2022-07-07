@@ -73,7 +73,8 @@ namespace MinhaPrimeiraAPI2.Config
 
         public static IApplicationBuilder UseSwaggerConfig(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
         {
-
+            //Usando o Middleware feito e será o primeiro a ser chamado no pipeline sempre acima das configurações do swagger
+            app.UseMiddleware<SwaggerAuthorizedMiddleware>();
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
@@ -82,6 +83,7 @@ namespace MinhaPrimeiraAPI2.Config
                     options.SwaggerEndpoint(url: $"/swagger/{description.GroupName}/swagger.json", description.GroupName.ToUpperInvariant());
                 }
             });
+            
             return app;
 
         }
@@ -167,6 +169,7 @@ namespace MinhaPrimeiraAPI2.Config
 
         public async Task Invoke(HttpContext context)
         {
+            //Verifica se contem a palavra swagger no path e se usuario está autenticado
             if (context.Request.Path.StartsWithSegments(other: "/swagger")
                 && !context.User.Identity.IsAuthenticated)
             {
@@ -174,6 +177,7 @@ namespace MinhaPrimeiraAPI2.Config
                 return;
             }
 
+            //Chama o proximo middleware do pipeline
             await _next.Invoke(context);
         }
     }

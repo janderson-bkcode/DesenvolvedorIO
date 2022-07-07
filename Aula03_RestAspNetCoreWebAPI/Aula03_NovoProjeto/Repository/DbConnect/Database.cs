@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Repository
+namespace Repository.DbConnect
 {
     public class Database
     {
