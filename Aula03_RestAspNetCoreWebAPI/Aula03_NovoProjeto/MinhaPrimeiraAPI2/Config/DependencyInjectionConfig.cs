@@ -1,5 +1,7 @@
+using Microsoft.Extensions.Options;
+using MinhaPrimeiraAPI2.Config;
 using MinhaPrimeiraAPI2.Data;
-
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace MinhaPrimeiraAPI2.Models
 {
@@ -9,7 +11,7 @@ namespace MinhaPrimeiraAPI2.Models
         {
 
             services.AddScoped<APIDbContext>();
-
+            services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
             return services;
         }
     }

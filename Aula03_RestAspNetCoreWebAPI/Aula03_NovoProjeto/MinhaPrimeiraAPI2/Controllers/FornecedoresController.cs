@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -10,8 +11,9 @@ using MinhaPrimeiraAPI2.Models;
 
 namespace MinhaPrimeiraAPI2.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/v{version:apiVersion}/fornecedores*- ")]
+    [ApiVersion("2.0")]
     public class FornecedoresController : ControllerBase
     {
         private readonly APIDbContext _context;
