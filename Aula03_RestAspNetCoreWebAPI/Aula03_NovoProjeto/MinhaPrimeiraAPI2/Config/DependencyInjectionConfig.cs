@@ -11,7 +11,7 @@ namespace MinhaPrimeiraAPI2.Models
         {
 
             services.AddScoped<APIDbContext>();
-            services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
+            //services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
             return services;
         }
     }

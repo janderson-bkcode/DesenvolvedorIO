@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace MinhaPrimeiraAPI2.Controllers
 {
     [ApiController]
-    [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/tempo")]
-    //[Route("api/[controller]")]
+    // [ApiVersion("1.0")]
+    //[Route("api/v{version:apiVersion}/tempo")]
+    [Route("api/[controller]")]
     //[Route("api/v{version:apiVersion}/tempo")]
     public class WeatherForecastController : ControllerBase
     {

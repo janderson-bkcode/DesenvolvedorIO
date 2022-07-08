@@ -71,7 +71,7 @@ namespace MinhaPrimeiraAPI2.Config
             return services;
         }
 
-        public static IApplicationBuilder UseSwaggerConfig(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
+        public static IApplicationBuilder UseSwagge8rConfig(this IApplicationBuilder app, IApiVersionDescriptionProvider provider)
         {
             //Usando o Middleware feito e será o primeiro a ser chamado no pipeline sempre acima das configurações do swagger
             app.UseMiddleware<SwaggerAuthorizedMiddleware>();
