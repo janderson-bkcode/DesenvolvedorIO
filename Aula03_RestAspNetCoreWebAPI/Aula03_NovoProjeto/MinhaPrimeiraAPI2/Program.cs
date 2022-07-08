@@ -7,7 +7,7 @@ using MinhaPrimeiraAPI2.Models;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var configuration = builder.Configuration;
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -21,6 +21,9 @@ builder.Services.AddSwaggerConfig();
 builder.Services.ResolveDependencies();
 builder.Services.AddMvc();
 builder.Services.AddMvcCore();
+
+//kisslog
+builder.Services.AddKissLogConfig();
 
 //Configuração do DBContext e SQl 
 builder.Services.AddDbContext<APIDbContext>(optionsAction: options =>
@@ -44,6 +47,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseKissLogConfig(configuration);
 
 app.MapControllers();
 
