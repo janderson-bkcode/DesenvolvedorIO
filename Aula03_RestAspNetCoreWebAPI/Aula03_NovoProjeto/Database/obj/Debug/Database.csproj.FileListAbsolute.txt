@@ -1,6 +1,0 @@
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Database\bin\Debug\Database.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Database\bin\Debug\Database.pdb
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Database\obj\Debug\Database.csproj.AssemblyReference.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Database\obj\Debug\Database.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Database\obj\Debug\Database.pdb
