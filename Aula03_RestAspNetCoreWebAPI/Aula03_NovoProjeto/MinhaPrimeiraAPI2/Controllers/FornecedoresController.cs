@@ -19,9 +19,12 @@ namespace MinhaPrimeiraAPI2.Controllers
     {
         private readonly APIDbContext _context;
 
-        public FornecedoresController(APIDbContext context)
+        private readonly ILogger<FornecedoresController> _logger;
+
+        public FornecedoresController(APIDbContext context, ILogger<FornecedoresController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: api/Fornecedores
@@ -32,6 +35,7 @@ namespace MinhaPrimeiraAPI2.Controllers
           {
               return NotFound();
           }
+            _logger.LogDebug("Hello world from .NET Core 5.x!");
             return await _context.Fornecedores.ToListAsync();
         }
 
