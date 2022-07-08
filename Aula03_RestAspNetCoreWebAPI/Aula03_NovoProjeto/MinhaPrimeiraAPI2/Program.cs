@@ -5,6 +5,7 @@ using MinhaPrimeiraAPI2.Data;
 using MinhaPrimeiraAPI2.Config;
 using MinhaPrimeiraAPI2.Models;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using MinhaPrimeiraAPI2.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -51,5 +52,6 @@ app.UseAuthorization();
 app.UseKissLogConfig(configuration);
 
 app.MapControllers();
-
+//Usando Midleware feito na pasta extensions para capturar erros e converter em statusCode
+app.UseMiddleware<ExceptionMiddleware>();
 app.Run();
