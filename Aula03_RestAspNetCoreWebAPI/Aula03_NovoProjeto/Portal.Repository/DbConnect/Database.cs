@@ -43,9 +43,9 @@ namespace Portal.Repository.DbConnect
 
         public string GetPassword(string username)
         {
-            if (!(username == "janderson"))
+            if (!(username == "sa"))
             {
-                if (username == "user_system_hysoft")
+                if (username == "sa")
                 {
                     return "Selecttop10*from";
                 }

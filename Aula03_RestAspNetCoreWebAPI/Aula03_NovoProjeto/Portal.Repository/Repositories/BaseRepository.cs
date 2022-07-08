@@ -29,7 +29,7 @@ namespace Portal.Repository.Repositories
 
         private void InitializeDatabase()
         {
-            _connection = new Database().GetConnection("user_gestao", "PAYMENT");
+            _connection = new Database().GetConnection("sa", "Fornecedores");
         }
 
         public void OpenIfClosed()
