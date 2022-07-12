@@ -5,7 +5,9 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using Microsoft.OpenApi.Models;
 
 namespace MinhaPrimeiraAPI2.Config
-{
+{   /// <summary>
+/// Classe para configuração do Swagger
+/// </summary>
     public static class SwaggerConfig
     {
 

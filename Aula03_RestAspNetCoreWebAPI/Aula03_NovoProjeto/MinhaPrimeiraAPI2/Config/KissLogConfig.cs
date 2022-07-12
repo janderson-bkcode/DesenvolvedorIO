@@ -17,7 +17,7 @@ namespace MinhaPrimeiraAPI2.Config
     public static class KissLogConfig
     {
 
-        public static IServiceCollection AddKissLogConfig(this IServiceCollection services)
+        public static IServiceCollection AddKissLogConfig5(this IServiceCollection services)
         {
             services.AddHttpContextAccessor();
 
