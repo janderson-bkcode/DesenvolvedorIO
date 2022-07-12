@@ -8,5 +8,3 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetC
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Domain.Fornecedores\obj\Debug\Domain.Fornecedores.csproj.CopyComplete
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Domain.Fornecedores\obj\Debug\Domain.Fornecedores.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Domain.Fornecedores\obj\Debug\Domain.Fornecedores.pdb
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Domain.Fornecedores\bin\Debug\Portal.Repository.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\Domain.Fornecedores\bin\Debug\Portal.Repository.pdb

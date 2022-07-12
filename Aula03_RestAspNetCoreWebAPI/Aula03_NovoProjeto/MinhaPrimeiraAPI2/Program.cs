@@ -6,6 +6,10 @@ using MinhaPrimeiraAPI2.Config;
 using MinhaPrimeiraAPI2.Models;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using MinhaPrimeiraAPI2.Extensions;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.Extensions.DependencyInjection;
+using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -30,6 +34,19 @@ builder.Services.AddKissLogConfig();
 builder.Services.AddDbContext<APIDbContext>(optionsAction: options =>
          options.UseSqlServer(builder.Configuration.GetConnectionString(name: "DefaultConnection")));
 
+//Configuração HealthCheck
+builder.Services.AddHealthChecks()
+    .AddSqlServer(builder.Configuration.GetConnectionString(name: "DefaultConnection"),name:"Banco");
+
+//Configurando a interface gráfica e o armazenamento do histórico
+builder.Services.AddHealthChecksUI(options =>
+{
+    options.SetEvaluationTimeInSeconds(5);
+    options.MaximumHistoryEntriesPerEndpoint(10);
+    options.AddHealthCheckEndpoint("API com Health Checks", "/api/hc-ui");
+})
+.AddInMemoryStorage();   //Aqui adicionamos o banco em memória
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -50,6 +67,9 @@ if (app.Environment.IsDevelopment())
 //Ver -> /Extensions/ExceptionMiddleware.cs
 app.UseMiddleware<ExceptionMiddleware>();
 
+
+
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -57,5 +77,16 @@ app.UseAuthorization();
 app.UseKissLogConfig(configuration);
 
 app.MapControllers();
+
+app.UseHealthChecks("/api/hc", new HealthCheckOptions
+{
+    Predicate = p => true,
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+});
+
+app.UseHealthChecksUI(options =>
+{
+    options.UIPath = "/Dashboard";
+});
 
 app.Run();
