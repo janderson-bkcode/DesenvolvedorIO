@@ -85,6 +85,7 @@ app.UseHealthChecks("/api/hc", new HealthCheckOptions //Aqui ativamos o serviço 
 app.UseHealthChecksUI(options =>
 {
     options.UIPath = "/Dashboard";
+    options.AddCustomStylesheet(@"Estilo\HealthCheck.css");
 });
 
 app.Run();
