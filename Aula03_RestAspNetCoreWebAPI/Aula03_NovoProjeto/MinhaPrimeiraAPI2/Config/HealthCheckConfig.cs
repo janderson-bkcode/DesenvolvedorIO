@@ -12,7 +12,10 @@ namespace MinhaPrimeiraAPI2.Config
         public static IServiceCollection AddHealthCheckConfig(this IServiceCollection services, IConfiguration configuration)
         {
             //Aqui adicionamos o HealthChecks e a Configuração HealthCheck com o SQL Server
-            services.AddHealthChecks().AddSqlServer(configuration.GetConnectionString(name: "DefaultConnection"), name: "Banco");
+            services.AddHealthChecks()
+                .AddSqlServer(configuration.GetConnectionString(name: "DefaultConnection"), name: "Banco")
+                //Abaixo sendo adicionado um Check Manual da classe SqlServerHealthCheck.cs
+                .AddCheck(name: "Produtos", new SqlServerHealthCheck(configuration.GetConnectionString(name: "DefaultConnection")));
 
             return services;
         }
