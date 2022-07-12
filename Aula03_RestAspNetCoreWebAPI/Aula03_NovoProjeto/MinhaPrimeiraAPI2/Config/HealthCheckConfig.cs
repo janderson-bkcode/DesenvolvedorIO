@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 namespace MinhaPrimeiraAPI2.Config
 {
+    /// <summary>
+    /// Classe de configuração do Heatl Checker do projeto
+    /// Ver appsettings.json
+    /// </summary>
     public static class HealthCheckConfig
     {
         public static IServiceCollection AddHealthCheckConfig(this IServiceCollection services, IConfiguration configuration)
