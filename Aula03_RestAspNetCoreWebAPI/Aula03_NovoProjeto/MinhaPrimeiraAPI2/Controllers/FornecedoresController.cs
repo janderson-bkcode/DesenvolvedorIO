@@ -35,6 +35,8 @@ namespace MinhaPrimeiraAPI2.Controllers
           {
               return NotFound();
           }
+            throw new ArgumentException("Exceção de teste");// Vai gerar erro 500 devido configurãção do ExceptionMiddleWare.cs
+
             _logger.LogDebug("Hello world from .NET Core 5.x!");
             return await _context.Fornecedores.ToListAsync();
         }

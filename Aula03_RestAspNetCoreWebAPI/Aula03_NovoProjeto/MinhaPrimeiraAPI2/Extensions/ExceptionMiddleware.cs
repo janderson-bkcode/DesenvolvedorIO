@@ -1,7 +1,9 @@
 ﻿using System.Net;
 
 namespace MinhaPrimeiraAPI2.Extensions
-{
+  { /// <summary>
+    /// Classe de configuraçao de Middeware para gerar erro 500 ao haver Exception
+    /// </summary>
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;

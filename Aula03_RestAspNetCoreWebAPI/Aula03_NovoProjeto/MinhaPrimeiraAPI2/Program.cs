@@ -45,6 +45,11 @@ if (app.Environment.IsDevelopment())
 }
 //Dentro do configure
 //app.app.UseSwaggerConfig(provider);
+
+//Usando Midleware feito na pasta extensions para quando houver Exceptions na controller gerará Response 500 
+//Ver -> /Extensions/ExceptionMiddleware.cs
+app.UseMiddleware<ExceptionMiddleware>();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -52,6 +57,5 @@ app.UseAuthorization();
 app.UseKissLogConfig(configuration);
 
 app.MapControllers();
-//Usando Midleware feito na pasta extensions para capturar erros e converter em statusCode
-app.UseMiddleware<ExceptionMiddleware>();
+
 app.Run();

@@ -4,7 +4,11 @@ namespace MinhaPrimeiraAPI2.Config
 {
     public static class ApiConfig
     {
-
+        /// <summary>
+        /// Método para configuração de versionamento da API
+        /// </summary>
+        /// <param name="services"></param>
+        /// <returns></returns>
         public static IServiceCollection WebApiConfig(this IServiceCollection services)
         {
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

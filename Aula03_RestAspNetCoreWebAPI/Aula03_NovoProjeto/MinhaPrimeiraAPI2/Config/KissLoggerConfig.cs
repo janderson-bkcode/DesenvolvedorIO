@@ -8,7 +8,9 @@ using KissLog.CloudListeners.Auth;
 using KissLog.CloudListeners.RequestLogsListener;
 
 namespace MinhaPrimeiraAPI2.Config
-{
+{/// <summary>
+/// Classe para configuração do KissLog Dotnet 6.0
+/// </summary>
     public static class LoggerConfig
     {
         public static void AddKissLogConfig(this IServiceCollection services)

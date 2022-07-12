@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src",
+    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site",
+    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Controllers",
+    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Views",
+    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Views\\Filme",
+    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Views\\Home",
     "\\Aula06_Areas\\AppModelo",
-    "\\Aula06_Areas\\AppModelo\\src",
-    "\\Aula06_Areas\\AppModelo\\src\\DevIO.UI.Site",
-    "\\Aula06_Areas\\AppModelo\\src\\DevIO.UI.Site\\Modulos\\Produtos",
-    "\\Aula08_EntityFramework\\AppModelo",
-    "\\Aula08_EntityFramework\\Materiais",
-    "\\Aula09_SegurancaAspNetIdentity",
-    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity",
-    "\\Aula09_SegurancaAspNetIdentity\\Materiais"
+    "\\Aula06_Areas\\AppModelo\\docs",
+    "\\Aula06_Areas\\AppModelo\\src\\DevIO.UI.Site"
   ],
-  "SelectedNode": "\\Aula08_EntityFramework",
+  "SelectedNode": "\\Aula06_Areas",
   "PreviewInSolutionExplorer": false
 }
