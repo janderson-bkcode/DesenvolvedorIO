@@ -13,13 +13,25 @@
     --bgTableSecondary: #2596be; /* secondary background color of table */
 }
 
-.hc-table__row{
+.hc-table__row {
     cursor: pointer;
     background-color: black;
+    opacity: 1 !important;
 }
-.hc-table__row:hover {
+    .hc-table__row:hover {
         cursor: pointer !important;
         background-color: green !important;
-       transition: 2s !important;
- }
+        opacity: 1 !important;
+        transition: 2s !important;
+    }
 
+header .hc-status{
+    color:black
+}
+h2{
+    color:black
+}
+
+div.material-icons{
+    color:black
+}
