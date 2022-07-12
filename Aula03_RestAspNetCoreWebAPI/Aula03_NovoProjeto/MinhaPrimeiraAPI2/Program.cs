@@ -33,20 +33,8 @@ builder.Services.AddKissLogConfig();
 //Configuração do DBContext e SQl 
 builder.Services.AddDbContext<APIDbContext>(optionsAction: options =>
          options.UseSqlServer(builder.Configuration.GetConnectionString(name: "DefaultConnection")));
-
-//Aqui adicionamos o HealthChecks e a Configuração HealthCheck com o SQL Server
-builder.Services.AddHealthChecks()
-    .AddSqlServer(builder.Configuration.GetConnectionString(name: "DefaultConnection"),name:"Banco");
-
-//Configurando a interface gráfica e o armazenamento do histórico 
-builder.Services.AddHealthChecksUI(options =>
-{
-    options.SetEvaluationTimeInSeconds(5); //define o intervalo que será disparado a verificação dos serviços
-    options.MaximumHistoryEntriesPerEndpoint(10); // define a quantidade máxima de registros permitidos no histórico
-
-    // options.AddHealthCheckEndpoint("API com Health Checks", "/api/hc"); Outra forma de adicionar um endpoint para ser monitorado
-})
-.AddInMemoryStorage();   //Aqui adicionamos o banco em memória
+builder.Services.AddHealthCheckConfig(configuration);
+builder.Services.AddHealthCheckUIConfig();
 
 var app = builder.Build();
 
@@ -75,17 +63,6 @@ app.UseAuthorization();
 app.UseKissLogConfig(configuration);
 
 app.MapControllers();
-
-app.UseHealthChecks("/api/hc", new HealthCheckOptions //Aqui ativamos o serviço e o caminho da chamada
-{
-    Predicate = p => true,
-    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-});
-
-app.UseHealthChecksUI(options =>
-{
-    options.UIPath = "/Dashboard";
-    options.AddCustomStylesheet(@"Estilo\HealthCheck.css");
-});
-
+app.UseHealthCheckConfig();
+app.UseHealthCheckUIConfig();
 app.Run();
