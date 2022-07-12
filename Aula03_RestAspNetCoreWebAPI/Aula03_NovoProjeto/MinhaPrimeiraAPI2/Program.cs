@@ -69,4 +69,4 @@ app.MapControllers();
 app.UseHealthCheckConfig();
 //Usando HeathCheck UI
 app.UseHealthCheckUIConfig();
-app.Run();
+  app.Run();

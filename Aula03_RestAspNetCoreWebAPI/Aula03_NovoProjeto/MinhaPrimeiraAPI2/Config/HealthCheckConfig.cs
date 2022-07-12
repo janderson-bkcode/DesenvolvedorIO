@@ -5,7 +5,7 @@ namespace MinhaPrimeiraAPI2.Config
 {
     /// <summary>
     /// Classe de configuração do Heatl Checker do projeto
-    /// Ver appsettings.json
+    /// Ver appsettings.json 
     /// </summary>
     public static class HealthCheckConfig
     {

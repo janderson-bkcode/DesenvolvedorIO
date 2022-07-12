@@ -17,9 +17,9 @@
     cursor: pointer;
     background-color: black;
 }
-    .hc-table__row:hover {
-        cursor: pointer;
-        background-color: black;
-        transition: 2s;
-    }
+.hc-table__row:hover {
+        cursor: pointer !important;
+        background-color: green !important;
+       transition: 2s !important;
+ }
 
