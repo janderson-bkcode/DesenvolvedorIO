@@ -33,7 +33,9 @@ builder.Services.AddKissLogConfig();
 //Configuração do DBContext e SQl 
 builder.Services.AddDbContext<APIDbContext>(optionsAction: options =>
          options.UseSqlServer(builder.Configuration.GetConnectionString(name: "DefaultConnection")));
+//Adição configuração HeathCheck
 builder.Services.AddHealthCheckConfig(configuration);
+//Adição configuração HeathCheck UI
 builder.Services.AddHealthCheckUIConfig();
 
 var app = builder.Build();
@@ -63,6 +65,8 @@ app.UseAuthorization();
 app.UseKissLogConfig(configuration);
 
 app.MapControllers();
+//Usando HeathCheck
 app.UseHealthCheckConfig();
+//Usando HeathCheck UI
 app.UseHealthCheckUIConfig();
 app.Run();
