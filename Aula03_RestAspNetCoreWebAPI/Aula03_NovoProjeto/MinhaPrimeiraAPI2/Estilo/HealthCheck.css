@@ -32,11 +32,18 @@ h2{
     color:black
 }
 /*Simbolo da coluna Details*/
-button .material-icons{
+ .material-icons{
     color:white
 }
 
 /*Simbolo do X do painel de Details*/
 aside .hc-action-btn .material-icons {
     color: black
+}
+
+.hc-table__head{
+    color:black;
+}
+.hc-refesh-group span {
+    color:black;
 }
