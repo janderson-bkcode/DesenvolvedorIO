@@ -40,24 +40,5 @@
 }
 
 <script>
-    function loadExcelForm(page) {
-
-        $.ajax({
-            url: '@Url.Action("_GridPosPixTransaction","POSPixTransaction")',
-            type: "POST",
-            async: true,
-            data: {
-                __RequestVerificationToken: getToken(),
-                request: {
-                    page: page,
-                    pageSize: 8,
-                    sinceDate: $("#sinceDate").val(),
-                    untilDate: $("#untilDate").val(),
-                    Nome: $("#nome").val(),
-                    Email: $("#email").val(),
-                }
-            },
-        });
-    }
 
 </script>

@@ -1,5 +1,4 @@
 ﻿using ClosedXML.Excel;
-using Domain.Interface.Service;
 using ExcelFormLuiza.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -17,13 +16,11 @@ namespace ExcelFormLuiza.Controllers
     {
         private readonly ILogger<ExcelFormLuizaController> _logger;
         private readonly myDataContext _context;
-        private readonly IExcelFormLuizaService _cardTransactionService;
 
-        public ExcelFormLuizaController(ILogger<ExcelFormLuizaController> logger, myDataContext context, IExcelFormLuizaService excelFormLuizaService)
+        public ExcelFormLuizaController(ILogger<ExcelFormLuizaController> logger, myDataContext context)
         {
             _logger = logger;
             _context = context;
-            _cardTransactionService = excelFormLuizaService;
         }
 
         public IActionResult Index()

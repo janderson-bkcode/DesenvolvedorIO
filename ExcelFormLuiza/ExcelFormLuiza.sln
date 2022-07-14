@@ -3,17 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelFormLuiza", "ExcelFormLuiza.csproj", "{5A30797C-7062-4BAD-A639-8C8DDCAF5E63}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\Domain\Domain.csproj", "{C51B6701-5FAC-4EB5-985C-EE3EAD28ADE4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{91A7F02D-556F-415C-942A-F736B456FA60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcelFormLuiza", "ExcelFormLuiza.csproj", "{5A30797C-7062-4BAD-A639-8C8DDCAF5E63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - App", "1 - App", "{8A0470FD-56F9-4159-9CEF-8AA40A1F04F6}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Repository", "3 - Repository", "{20BD9196-DC06-471A-B8DB-429CA4B1E933}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelFormLuizaRepository", "ExcelFormLuizaRepository\ExcelFormLuizaRepository.csproj", "{77F9F2FE-CE5C-4BE8-9227-90DDA5459D82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +17,12 @@ Global
 		{5A30797C-7062-4BAD-A639-8C8DDCAF5E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A30797C-7062-4BAD-A639-8C8DDCAF5E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A30797C-7062-4BAD-A639-8C8DDCAF5E63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C51B6701-5FAC-4EB5-985C-EE3EAD28ADE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C51B6701-5FAC-4EB5-985C-EE3EAD28ADE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C51B6701-5FAC-4EB5-985C-EE3EAD28ADE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C51B6701-5FAC-4EB5-985C-EE3EAD28ADE4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{77F9F2FE-CE5C-4BE8-9227-90DDA5459D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{77F9F2FE-CE5C-4BE8-9227-90DDA5459D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{77F9F2FE-CE5C-4BE8-9227-90DDA5459D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{77F9F2FE-CE5C-4BE8-9227-90DDA5459D82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5A30797C-7062-4BAD-A639-8C8DDCAF5E63} = {8A0470FD-56F9-4159-9CEF-8AA40A1F04F6}
-		{C51B6701-5FAC-4EB5-985C-EE3EAD28ADE4} = {91A7F02D-556F-415C-942A-F736B456FA60}
-		{77F9F2FE-CE5C-4BE8-9227-90DDA5459D82} = {20BD9196-DC06-471A-B8DB-429CA4B1E933}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9862EA41-9E7A-4E94-8291-896B9BA0487B}
