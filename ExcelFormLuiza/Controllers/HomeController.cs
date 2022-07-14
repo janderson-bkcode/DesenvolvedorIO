@@ -1,6 +1,6 @@
-﻿using BundleTransformer.Core.Constants;
+﻿
 using ClosedXML.Excel;
-using Eco.Persistence.Configuration;
+using Domain.Models.Request;
 using ExcelFormLuiza.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -48,6 +48,17 @@ namespace ExcelFormLuiza.Controllers
             }
             return View();
         }
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> GetUsers(UserExcelFormManualRequest request)
+        //{
+
+        //    List<User> response = _GetUsersResponse.GetPosPixTransaction(request);
+
+
+        //    return PartialView(response);
+        //}
 
         public IActionResult Privacy()
         {
