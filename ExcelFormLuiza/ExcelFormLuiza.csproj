@@ -28,4 +28,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Domain">
+      <HintPath>..\Domain\bin\Debug\Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
