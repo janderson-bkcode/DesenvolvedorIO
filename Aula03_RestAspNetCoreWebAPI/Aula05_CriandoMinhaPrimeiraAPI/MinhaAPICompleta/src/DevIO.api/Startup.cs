@@ -28,8 +28,8 @@ namespace DevIO.api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddMvc();
             services.AddSwaggerConfig();
+            services.ResolveDependencies();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,7 +51,7 @@ namespace DevIO.api
                 endpoints.MapControllers();
             });
 
-            app.UseSwaggerConfig(provider);
+           
         }
     }
 }
