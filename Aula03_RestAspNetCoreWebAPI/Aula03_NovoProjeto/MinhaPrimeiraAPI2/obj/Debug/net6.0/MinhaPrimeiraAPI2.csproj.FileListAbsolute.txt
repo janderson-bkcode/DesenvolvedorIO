@@ -7,7 +7,10 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetC
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\MinhaPrimeiraAPI2.pdb
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.SqlServer.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.dll
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.Client.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.Core.dll
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.InMemory.Storage.dll
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.SQLite.Storage.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Azure.Identity.dll
@@ -51,6 +54,7 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetC
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
@@ -311,7 +315,3 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetC
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\obj\Debug\net6.0\MinhaPrimeiraAPI2.pdb
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\obj\Debug\net6.0\MinhaPrimeiraAPI2.genruntimeconfig.cache
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\obj\Debug\net6.0\ref\MinhaPrimeiraAPI2.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.SQLite.Storage.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.Client.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\HealthChecks.UI.InMemory.Storage.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula03_NovoProjeto\MinhaPrimeiraAPI2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll

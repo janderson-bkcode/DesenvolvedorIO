@@ -56,7 +56,7 @@ if (app.Environment.IsDevelopment())
 
 //Usando Midleware feito na pasta extensions para quando houver Exceptions na controller gerará Response 500 
 //Ver -> /Extensions/ExceptionMiddleware.cs
-app.UseMiddleware<ExceptionMiddleware>();
+//app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
@@ -69,4 +69,4 @@ app.MapControllers();
 app.UseHealthCheckConfig();
 //Usando HeathCheck UI
 app.UseHealthCheckUIConfig();
-  app.Run();
+app.Run();

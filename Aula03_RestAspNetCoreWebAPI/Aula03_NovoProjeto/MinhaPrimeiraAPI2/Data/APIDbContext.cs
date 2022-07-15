@@ -5,7 +5,7 @@ namespace MinhaPrimeiraAPI2.Data
 {
     public class APIDbContext : DbContext
     {
-        public APIDbContext(DbContextOptions options):base(options)
+        public APIDbContext(DbContextOptions<APIDbContext> options):base(options)
         {
 
         }
