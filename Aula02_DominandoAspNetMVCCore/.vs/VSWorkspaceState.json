@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src",
-    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site",
-    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Controllers",
-    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Views",
-    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Views\\Filme",
-    "\\Aula05_MinhaPrimeiraAppMVCCore\\AppModelo2\\src\\DevIO.UI.Site\\Views\\Home",
-    "\\Aula06_Areas\\AppModelo",
-    "\\Aula06_Areas\\AppModelo\\docs",
-    "\\Aula06_Areas\\AppModelo\\src\\DevIO.UI.Site"
+    "\\Aula03_Models",
+    "\\Aula03_Models\\A3_DemoMVCModels",
+    "\\Aula09_SegurancaAspNetIdentity",
+    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity",
+    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity",
+    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas",
+    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity",
+    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity\\Data",
+    "\\Aula09_SegurancaAspNetIdentity\\Materiais"
   ],
-  "SelectedNode": "\\Aula06_Areas",
+  "SelectedNode": "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
