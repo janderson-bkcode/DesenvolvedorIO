@@ -117,10 +117,10 @@ namespace DevIO.api.Config
                 {
                     parameter.Description = description.ModelMetadata?.Description;
                 }
-                if (parameter.Default == null)
-                {
-                    parameter.Default = description.DefaultValue;
-                }
+                //if (parameter.Default == null)
+                //{
+                //    parameter.Default = description.DefaultValue;
+                //}
 
                 parameter.Required |= description.IsRequired;
             }
