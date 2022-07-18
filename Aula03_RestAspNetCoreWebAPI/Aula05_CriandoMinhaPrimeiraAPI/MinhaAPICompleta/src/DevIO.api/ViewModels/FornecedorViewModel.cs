@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace DevIO.api.ViewModels
 {
-    public class Fornecedor
+    public class FornecedorViewModel
     {
         [Key]
         public Guid Id { get; set; }
@@ -18,7 +19,11 @@ namespace DevIO.api.ViewModels
 
         public int TipoFornecedor { get; set; }
 
+        public EnderecoViewModel MyProperty { get; set; }
+
         public bool Ativo { get; set; }
+
+       public IEnumerable<ProdutoViewModel> Produtos { get;set }
 
     }
 }

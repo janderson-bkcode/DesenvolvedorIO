@@ -30,6 +30,8 @@ namespace DevIO.api
             services.AddControllers();
             services.AddSwaggerConfig();
             services.ResolveDependencies();
+            services.AddMvc();
+            services.AddAutoMapper(typeof(Startup)); //AutoMapperConfig.cs
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
