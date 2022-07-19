@@ -54,9 +54,10 @@ namespace DevIO.api.Controllers
             //Mapeando o Fornecedor através da FornecedorViewModel Recebida no Post
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
 
+            //Chamando o servico que grava no banco. O repositorio apenas lê **importante
             await _fornecedorService.Adicionar(fornecedor);
 
-            return Ok();
+            return Ok(fornecedor);
             
         } 
     }
