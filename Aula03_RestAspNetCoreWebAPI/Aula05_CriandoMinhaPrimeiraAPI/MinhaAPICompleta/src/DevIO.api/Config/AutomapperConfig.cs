@@ -9,7 +9,9 @@ namespace DevIO.api.Config
     /// </summary>
     public class AutomapperConfig : Profile
     {
-
+        /// <summary>
+        /// Construtor para criação dos mappings
+        /// </summary>
         public AutomapperConfig()
         {
             CreateMap<Fornecedor, FornecedorViewModel>().ReverseMap();
