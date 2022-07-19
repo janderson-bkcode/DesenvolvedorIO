@@ -63,27 +63,27 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
             },
             "Microsoft.Extensions.Configuration.CommandLine": {
               "target": "Package",
               "version": "[3.1.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.3.2, )"
-            },
-            "Swashbuckle.AspNetCore.Swagger": {
-              "target": "Package",
-              "version": "[6.3.2, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerGen": {
-              "target": "Package",
-              "version": "[6.3.2, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerUI": {
-              "target": "Package",
-              "version": "[6.3.2, )"
             }
           },
           "imports": [
@@ -229,12 +229,6 @@
               "target": "Package",
               "version": "[2.2.4, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[2.2.4, )"
@@ -243,11 +237,25 @@
               "target": "Package",
               "version": "[2.2.4, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.CommandLine": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "NuGet.CommandLine": {
+              "target": "Package",
+              "version": "[3.3.0, )"
             }
           },
           "imports": [

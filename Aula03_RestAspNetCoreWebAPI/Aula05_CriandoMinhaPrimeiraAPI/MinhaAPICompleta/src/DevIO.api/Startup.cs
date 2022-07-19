@@ -34,9 +34,9 @@ namespace DevIO.api
                 options.UseSqlServer(Configuration.GetConnectionString(name: "DefaultConnection"));
             });
             services.AddControllers();
-            services.AddSwaggerConfig();
+          //  services.AddSwaggerConfig();
             services.ResolveDependencies();
-            services.AddMvc();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddAutoMapper(typeof(Startup)); //AutoMapperConfig.cs
         }
 

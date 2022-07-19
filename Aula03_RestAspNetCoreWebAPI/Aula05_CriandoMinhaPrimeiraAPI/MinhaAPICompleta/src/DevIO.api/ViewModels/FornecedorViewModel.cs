@@ -23,7 +23,7 @@ namespace DevIO.api.ViewModels
 
         public bool Ativo { get; set; }
 
-       public IEnumerable<ProdutoViewModel> Produtos { get;set }
+       public IEnumerable<ProdutoViewModel> Produtos { get; set; }
 
     }
 }

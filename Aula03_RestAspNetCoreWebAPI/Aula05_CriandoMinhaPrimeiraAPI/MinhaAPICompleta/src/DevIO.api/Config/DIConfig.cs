@@ -3,7 +3,7 @@ using DevIO.Data.Context;
 using DevIO.Data.Repository;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Swashbuckle.AspNetCore.SwaggerGen;
+//using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace DevIO.api.Config
 {
@@ -14,7 +14,7 @@ namespace DevIO.api.Config
 
             services.AddScoped<MeuDbContext>();
             services.AddScoped<IFornecedorRepository, FornecedorRepository>();
-            services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
+           // services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
             return services;
         }
     }
