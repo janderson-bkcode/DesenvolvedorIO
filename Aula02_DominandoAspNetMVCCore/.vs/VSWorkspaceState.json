@@ -1,16 +1,17 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Aula03_Models",
-    "\\Aula03_Models\\A3_DemoMVCModels",
+    "\\Aula08_EntityFramework\\AppModelo",
+    "\\Aula08_EntityFramework\\AppModelo\\src",
+    "\\Aula08_EntityFramework\\AppModelo\\src\\Dev.IO.UI.Site",
     "\\Aula09_SegurancaAspNetIdentity",
     "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity",
     "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity",
     "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas",
     "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity",
     "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity\\Data",
-    "\\Aula09_SegurancaAspNetIdentity\\Materiais"
+    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Controllers"
   ],
-  "SelectedNode": "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Program.cs",
+  "SelectedNode": "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity\\Data\\AspNetCoreIdentityContext.cs",
   "PreviewInSolutionExplorer": false
 }
