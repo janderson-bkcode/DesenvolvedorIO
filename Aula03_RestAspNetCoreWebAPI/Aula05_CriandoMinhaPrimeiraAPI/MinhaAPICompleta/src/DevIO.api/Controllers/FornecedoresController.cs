@@ -59,6 +59,24 @@ namespace DevIO.api.Controllers
             if (!result) return BadRequest();
 
             return Ok(fornecedor);           
-        } 
+        }
+
+
+        [HttpPut("{id:guid}")]
+        public async Task<ActionResult<FornecedorViewModel>> Atualizar(Guid id,FornecedorViewModel fornecedorViewModel)
+        {
+            if (id != fornecedorViewModel.Id) return BadRequest();
+
+            if (!ModelState.IsValid) return BadRequest();
+
+            //Mapeando o Fornecedor através da FornecedorViewModel Recebida no Post
+            var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
+            //Chamando a Service que grava no banco. O repository apenas lê **importante isso ein vacilão
+            var result = await _fornecedorService.Atualizar(fornecedor);
+
+            if (!result) return BadRequest();
+
+            return Ok(fornecedor);
+        }
     }
 }
