@@ -78,5 +78,24 @@ namespace DevIO.api.Controllers
 
             return Ok(fornecedor);
         }
+
+        [HttpDelete("{id:guid}")]
+        
+        public async Task<ActionResult<FornecedorViewModel>> Excluir(Guid id)
+        {
+            var fornecedor = await ObterFornecedorEndereco(id);
+
+            if (fornecedor == null) return NotFound();
+           var result = await _fornecedorService.Remover(id);
+
+            if (!result) return BadRequest();
+
+            return Ok(fornecedor);
+        }
+
+        public async Task<FornecedorViewModel> ObterFornecedorEndereco(Guid id)
+        {
+            return _mapper.Map<FornecedorViewModel>(await _fornecedorRepository.ObterFornecedorEndereco(id));
+        }
     }
 }
