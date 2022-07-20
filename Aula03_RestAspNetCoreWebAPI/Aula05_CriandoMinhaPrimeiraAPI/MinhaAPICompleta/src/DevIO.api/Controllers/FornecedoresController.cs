@@ -36,7 +36,7 @@ namespace DevIO.api.Controllers
         {
             //Mapeando para os dados virem de Fornecedores e serem mapeados para a  ViewModel
             // var fornecedor = _mapper.Map<FornecedorViewModel>(await _fornecedorRepository.ObterPorId(id));
-            var fornecedor = await ObterFornecedorProdutosEndereco(id);//Chamando método abaixo
+            var fornecedor = await ObterFornecedorProdutosEndereco(id);//Chamando método abaixo de forma Encapsulada
             if (fornecedor == null) return NotFound();
             return fornecedor;
         }
