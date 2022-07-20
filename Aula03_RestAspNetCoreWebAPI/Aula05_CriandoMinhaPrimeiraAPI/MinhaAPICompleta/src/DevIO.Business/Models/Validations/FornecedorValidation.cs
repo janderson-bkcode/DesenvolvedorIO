@@ -22,8 +22,10 @@ namespace DevIO.Business.Models.Validations
 
             When(f => f.TipoFornecedor == TipoFornecedor.PessoaJuridica, () =>
             {
+                //Comparação de Tamanho do Documento
                 RuleFor(f => f.Documento.Length).Equal(CnpjValidacao.TamanhoCnpj)
                     .WithMessage("O campo Documento precisa ter {ComparisonValue} caracteres e foi fornecido {PropertyValue}.");
+                //Comparação de Tamanho do Documento
                 RuleFor(f => CnpjValidacao.Validar(f.Documento)).Equal(true)
                     .WithMessage("O documento fornecido é inválido.");
             });
