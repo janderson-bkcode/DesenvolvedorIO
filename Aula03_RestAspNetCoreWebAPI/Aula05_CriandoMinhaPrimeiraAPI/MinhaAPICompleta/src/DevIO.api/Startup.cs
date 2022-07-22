@@ -33,11 +33,16 @@ namespace DevIO.api
 
                 options.UseSqlServer(Configuration.GetConnectionString(name: "DefaultConnection"));
             });
+
             services.AddControllers();
-          //  services.AddSwaggerConfig();
+            //  services.AddSwaggerConfig();
+            services.AddMvc();
             services.ResolveDependencies();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //services.AddMvcCore()
+            //    .AddApiExplorer();
+            // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddAutoMapper(typeof(Startup)); //AutoMapperConfig.cs
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
