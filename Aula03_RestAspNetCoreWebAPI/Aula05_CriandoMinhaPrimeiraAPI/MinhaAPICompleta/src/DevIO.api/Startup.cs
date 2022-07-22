@@ -37,12 +37,21 @@ namespace DevIO.api
             services.AddControllers();
             //  services.AddSwaggerConfig();
             services.AddMvc();
-            services.ResolveDependencies();
+           
             //services.AddMvcCore()
             //    .AddApiExplorer();
             // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddAutoMapper(typeof(Startup)); //AutoMapperConfig.cs
-           
+
+            //Desabilitar a formatação e validação de erros automatico
+            //removendo configuração padrão
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+            //Injeção de Dependência
+            services.ResolveDependencies();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
