@@ -73,12 +73,12 @@ namespace DevIO.api.Controllers
 
             var imgPrefixo = Guid.NewGuid() + "_" ;
 
-            if (!UploadArquivo(produtoViewModel.ImagemUpload,imgPrefixo))
+            if (!await UploadArquivoAlternativo(produtoViewModel.ImagemUpload,imgPrefixo))
             {
-                return CustomResponse(produtoViewModel);
+                return CustomResponse(ModelState);
             }
 
-            produtoViewModel.Imagem = imgPrefixo;
+            produtoViewModel.Imagem = imgPrefixo + produtoViewModel.ImagemUpload.FileName;
 
             await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
 
