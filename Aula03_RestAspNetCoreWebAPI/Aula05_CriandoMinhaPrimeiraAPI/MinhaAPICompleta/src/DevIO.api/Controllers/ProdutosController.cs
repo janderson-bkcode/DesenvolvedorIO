@@ -132,15 +132,15 @@ namespace DevIO.api.Controllers
                 return false;
             }
             //Pegar a combinação do diretorio atual da aplicação , + wwwroot/imagens + o nome da imagem e gerar um path
-            var Path = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", imgPrefixo + arquivo.FileName); 
+            var path = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", imgPrefixo + arquivo.FileName); 
 
-            if (System.IO.File.Exists(Path))
+            if (System.IO.File.Exists(path))
             {
                 //ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome");
                 NotificarErro("Já existe um arquivo com este nome");
                 return false;
             }
-            using (var stream = new FileStream(Path,FileMode.Create))
+            using (var stream = new FileStream(path,FileMode.Create))
             {
                 await arquivo.CopyToAsync(stream);
             }
