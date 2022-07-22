@@ -33,6 +33,7 @@ namespace DevIO.api.Controllers
                 success = true,
                 data = result
             });
+
             return BadRequest(new 
             {
                 success = false,
@@ -57,7 +58,7 @@ namespace DevIO.api.Controllers
             }
         }
 
-        private void NotificarErro(string mensagem)
+        protected void NotificarErro(string mensagem)
         {
             _notificador.Handle(new Notificacao(mensagem));
         }

@@ -16,9 +16,10 @@ namespace DevIO.api.Controllers
         private readonly IFornecedorService _fornecedorService;
         private readonly IMapper _mapper;
 
+
         public FornecedoresController(IFornecedorRepository fornecedorRepository,
                                       IMapper mapper,
-                                      IFornecedorService fornecedorService)
+                                      IFornecedorService fornecedorService, INotificador notificador) : base(notificador)
         {
             _fornecedorRepository = fornecedorRepository;
             _mapper = mapper;
@@ -49,15 +50,20 @@ namespace DevIO.api.Controllers
         [HttpPost]
         public async Task<ActionResult<FornecedorViewModel>> Adicionar(FornecedorViewModel fornecedorViewModel)
         {
+          
+
             if (!ModelState.IsValid) return CustomResponse(ModelState); /*return BadRequest();*/
 
             //Mapeando o Fornecedor através da FornecedorViewModel Recebida no Post
-            var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
+            //var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
             //Chamando a Service que grava no banco. O repository apenas lê **importante isso ein vacilão
-            var result = await _fornecedorService.Adicionar(fornecedor);
+            // var result = await _fornecedorService.Adicionar(fornecedor);
 
-             // if (!result) return BadRequest();
-            //  return Ok(fornecedor);
+            await _fornecedorService.Adicionar(_mapper.Map<Fornecedor>(fornecedorViewModel));
+
+
+            //if (!result) return BadRequest();
+           //   return Ok(fornecedor);    
             return CustomResponse(fornecedorViewModel);
 
                  
@@ -67,32 +73,43 @@ namespace DevIO.api.Controllers
         [HttpPut("{id:guid}")]
         public async Task<ActionResult<FornecedorViewModel>> Atualizar(Guid id,FornecedorViewModel fornecedorViewModel)
         {
-            if (id != fornecedorViewModel.Id) return BadRequest();
-
-            if (!ModelState.IsValid) return BadRequest();
+            // if (id != fornecedorViewModel.Id) return BadRequest();
+            if (id != fornecedorViewModel.Id)
+            {
+                NotificarErro("O id informado não é o mesmo que foi passado na query");
+                return CustomResponse(fornecedorViewModel);
+            }
+       
+            if (!ModelState.IsValid) return CustomResponse(ModelState);//return BadRequest();
 
             //Mapeando o Fornecedor através da FornecedorViewModel Recebida no Post
-            var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
+           // var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
             //Chamando a Service que grava no banco. O repository apenas lê **importante isso ein vacilão
-            var result = await _fornecedorService.Atualizar(fornecedor);
+           // var result = await _fornecedorService.Atualizar(fornecedor);
 
-            if (!result) return BadRequest();
+           await _fornecedorService.Atualizar(_mapper.Map<Fornecedor>(fornecedorViewModel));
+            // if (!result) return BadRequest();
 
-            return Ok(fornecedor);
+            //return Ok(fornecedor);
+
+            return CustomResponse(fornecedorViewModel);
         }
 
         [HttpDelete("{id:guid}")]
         
         public async Task<ActionResult<FornecedorViewModel>> Excluir(Guid id)
         {
-            var fornecedor = await ObterFornecedorEndereco(id);
+            var fornecedorViewModel = await ObterFornecedorEndereco(id);
 
-            if (fornecedor == null) return NotFound();
-           var result = await _fornecedorService.Remover(id);
+            if (fornecedorViewModel == null) return NotFound();
+            //  var result = await _fornecedorService.Remover(id);
+            await _fornecedorService.Remover(id);
 
-            if (!result) return BadRequest();
+            //if (!result) return BadRequest();
 
-            return Ok(fornecedor);
+            //  return Ok(fornecedor);
+
+            return CustomResponse(fornecedorViewModel);
         }
 
         public async Task<FornecedorViewModel> ObterFornecedorEndereco(Guid id)

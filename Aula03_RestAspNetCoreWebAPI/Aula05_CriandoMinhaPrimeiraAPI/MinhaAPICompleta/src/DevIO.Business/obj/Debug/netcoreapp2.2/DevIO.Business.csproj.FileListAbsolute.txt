@@ -8,13 +8,3 @@ C:\Users\insta\Desktop\cursos\Desenvolvedor.io\MinhaAPICompleta\src\DevIO.Busine
 C:\Users\insta\Desktop\cursos\Desenvolvedor.io\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.csproj.CoreCompileInputs.cache
 C:\Users\insta\Desktop\cursos\Desenvolvedor.io\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.dll
 C:\Users\insta\Desktop\cursos\Desenvolvedor.io\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.pdb
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.deps.json
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.csproj.AssemblyReference.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfoInputs.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfo.cs
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.csproj.CoreCompileInputs.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.pdb
