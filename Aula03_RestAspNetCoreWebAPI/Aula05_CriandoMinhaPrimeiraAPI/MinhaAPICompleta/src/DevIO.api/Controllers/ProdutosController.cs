@@ -2,6 +2,7 @@
 using DevIO.api.ViewModels;
 using DevIO.Business.Intefaces;
 using DevIO.Business.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -65,6 +66,25 @@ namespace DevIO.api.Controllers
             return CustomResponse(produtoViewModel);
         }
 
+        [HttpPost("adicionar")]
+        public async Task<ActionResult<ProdutoImagemViewModel>> AdicionarAlternativo (ProdutoImagemViewModel produtoViewModel)
+        {
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
+
+            var imgPrefixo = Guid.NewGuid() + "_" ;
+
+            if (!UploadArquivo(produtoViewModel.ImagemUpload,imgPrefixo))
+            {
+                return CustomResponse(produtoViewModel);
+            }
+
+            produtoViewModel.Imagem = imgPrefixo;
+
+            await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
+
+            return CustomResponse(produtoViewModel);
+        }
+
 
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<ProdutoViewModel>> Excluir(Guid id)
@@ -98,6 +118,32 @@ namespace DevIO.api.Controllers
                 return false;
             }
             System.IO.File.WriteAllBytes(filePath, imageDataByteArray);
+
+            return true;
+        }
+
+        private async Task<bool> UploadArquivoAlternativo(IFormFile arquivo,string imgPrefixo)
+        {
+
+            if (arquivo == null || arquivo.Length <=0)
+            {
+                //  ModelState.AddModelError(string.Empty, "Forneça uma imagem para este produto!");
+                NotificarErro("Forneça uma imagem para este produto!");
+                return false;
+            }
+            //Pegar a combinação do diretorio atual da aplicação , + wwwroot/imagens + o nome da imagem e gerar um path
+            var Path = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", imgPrefixo + arquivo.FileName); 
+
+            if (System.IO.File.Exists(Path))
+            {
+                //ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome");
+                NotificarErro("Já existe um arquivo com este nome");
+                return false;
+            }
+            using (var stream = new FileStream(Path,FileMode.Create))
+            {
+                await arquivo.CopyToAsync(stream);
+            }
 
             return true;
         }
