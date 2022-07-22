@@ -18,6 +18,7 @@ namespace DevIO.api.Controllers
         private readonly IMapper _mapper;
 
 
+
         public FornecedoresController(IFornecedorRepository fornecedorRepository,
                                       IMapper mapper,
                                       IFornecedorService fornecedorService, INotificador notificador, IEnderecoRepository enderecoRepository) : base(notificador)
@@ -43,6 +44,35 @@ namespace DevIO.api.Controllers
             if (fornecedor == null) return NotFound();
             return fornecedor;
         }
+        [HttpGet("obter-endereco/{id:guid}")]
+        public async Task<EnderecoViewModel> ObterEnderecoPorId(Guid id)
+        {
+           // var enderecoViewModel = _mapper.Map<EnderecoViewModel>(await _enderecoRepository.ObterPorId(id));
+           //return enderecoViewModel
+            return _mapper.Map<EnderecoViewModel>(await _enderecoRepository.ObterPorId(id));
+        }
+
+        [HttpPut("atualizar-endereco/{id:guid}")]
+
+        public async Task<IActionResult> AtualizarEndereco(Guid id,EnderecoViewModel enderecoViewModel)
+        {
+            if (id != enderecoViewModel.Id) // return BadRequest();
+
+            {
+                NotificarErro("O id informado não é o mesmo que foi passado na query");
+                return CustomResponse(enderecoViewModel);
+            }
+            if (!ModelState.IsValid) return CustomResponse(ModelState);
+
+            // var endereco = _mapper.Map<Endereco>(enderecoViewModel);
+            //await  _fornecedorService.AtualizarEndereco(endereco)
+            await _fornecedorService.AtualizarEndereco(_mapper.Map<Endereco>(enderecoViewModel));
+
+            return CustomResponse(enderecoViewModel);
+        }
+
+
+
         //Encapsulando lógida de obter dados Fornecedor através de um Id tipo Guid
         public async Task<FornecedorViewModel> ObterFornecedorProdutosEndereco(Guid id)
         {
