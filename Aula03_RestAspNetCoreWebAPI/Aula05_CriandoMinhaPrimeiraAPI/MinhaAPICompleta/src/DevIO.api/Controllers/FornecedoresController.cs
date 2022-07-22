@@ -49,16 +49,18 @@ namespace DevIO.api.Controllers
         [HttpPost]
         public async Task<ActionResult<FornecedorViewModel>> Adicionar(FornecedorViewModel fornecedorViewModel)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState); /*return BadRequest();*/
 
             //Mapeando o Fornecedor através da FornecedorViewModel Recebida no Post
             var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
             //Chamando a Service que grava no banco. O repository apenas lê **importante isso ein vacilão
             var result = await _fornecedorService.Adicionar(fornecedor);
 
-            if (!result) return BadRequest();
+             // if (!result) return BadRequest();
+            //  return Ok(fornecedor);
+            return CustomResponse(fornecedorViewModel);
 
-            return Ok(fornecedor);           
+                 
         }
 
 
