@@ -51,6 +51,13 @@ namespace DevIO.api.Controllers
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
 
+            var imagemNome = Guid.NewGuid() + "_" + produtoViewModel.Imagem;
+
+            if (!UploadArquivo(produtoViewModel.ImagemUpload,imagemNome))
+            {
+                return CustomResponse(produtoViewModel);
+            }
+
             await _produtoService.Adicionar(_mapper.Map<Produto>(produtoViewModel));
 
             return CustomResponse(produtoViewModel);
