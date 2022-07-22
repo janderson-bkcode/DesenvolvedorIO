@@ -89,6 +89,7 @@ namespace DevIO.api.Controllers
                 return false;
             }
             System.IO.File.WriteAllBytes(filePath, imageDataByteArray);
+
             return true;
         }
 
