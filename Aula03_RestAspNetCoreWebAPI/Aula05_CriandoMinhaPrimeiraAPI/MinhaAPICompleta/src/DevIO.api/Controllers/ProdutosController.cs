@@ -74,7 +74,7 @@ namespace DevIO.api.Controllers
             var imgPrefixo = Guid.NewGuid() + "_" ;
 
             if (!await UploadArquivoAlternativo(produtoViewModel.ImagemUpload,imgPrefixo))
-            {
+            { 
                 return CustomResponse(ModelState);
             }
 
@@ -85,6 +85,12 @@ namespace DevIO.api.Controllers
             return CustomResponse(produtoViewModel);
         }
 
+        [DisableRequestSizeLimit]
+        [HttpPost("imagem")]
+        public async Task<ActionResult> AdicionarImagem(IFormFile file)
+        {
+            return Ok(file);
+        }
 
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<ProdutoViewModel>> Excluir(Guid id)
