@@ -45,6 +45,7 @@ namespace DevIO.api
 
             //Desabilitar a formatação e validação de erros automatico
             //removendo configuração padrão
+            //Suprimindo a forma de validação da ViewModel automatica para podermos personalizar a validação de erros
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
