@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
 
 namespace DevIO.api.Controllers
@@ -56,10 +57,6 @@ namespace DevIO.api.Controllers
         }
 
 
-
-
-
-
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<ProdutoViewModel>> Excluir(Guid id)
         {
@@ -71,6 +68,29 @@ namespace DevIO.api.Controllers
             return CustomResponse(produto);
             
         }
+
+        private bool UploadArquivo(string arquivo,string imgNome)
+        {
+            var imageDataByteArray = Convert.FromBase64String(arquivo);
+
+            if (string.IsNullOrEmpty(arquivo))
+            {
+                ModelState.AddModelError(string.Empty, "Forneça uma imagem para este produto!");
+                return false;
+            }
+
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", imgNome);
+
+            if (System.IO.File.Exists(filePath))
+            {
+                ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome");
+                return false;
+            }
+            System.IO.File.WriteAllBytes(filePath, imageDataByteArray);
+            return true;
+        }
+
+
         public async Task<ProdutoViewModel> ObterProduto(Guid id)
         {
             //var produto = _mapper.Map<ProdutoViewModel>(await _produtoRepository.ObterProdutoFornecedor(id));
@@ -78,6 +98,9 @@ namespace DevIO.api.Controllers
 
             return _mapper.Map< ProdutoViewModel> (await _produtoRepository.ObterProdutoFornecedor(id));
         }
+
+
+
 
 
 
