@@ -1,0 +1,9 @@
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.csproj.AssemblyReference.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.AssemblyInfoInputs.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.AssemblyInfo.cs
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.csproj.CoreCompileInputs.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.RazorAssemblyInfo.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula03_RestAspNetCoreWebAPI\Aula05_CriandoMinhaPrimeiraAPI\MinhaAPICompleta\src\DevIO.api\obj\Debug\netcoreapp3.1\DevIO.api.RazorAssemblyInfo.cs

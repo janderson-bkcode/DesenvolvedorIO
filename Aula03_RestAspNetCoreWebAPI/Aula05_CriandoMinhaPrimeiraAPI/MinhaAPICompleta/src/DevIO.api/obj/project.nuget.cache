@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "D/to1nRPqxnHRBDRQZ1qwrAveAtcMq8+QA1g9olLaUrSLy0504ch5MtGLKWJCLVmjKDvESlT+r/Qj5dPKQ5h0w==",
+  "dgSpecHash": "HKgRK/bvupQBRiZXUAffK76xQ4YwFCXvSGFKQhNbLMjuZR/lpudzHQUUANBHNrmiXagxLcmlNuwWmdz+bfrU+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula03_RestAspNetCoreWebAPI\\Aula05_CriandoMinhaPrimeiraAPI\\MinhaAPICompleta\\src\\DevIO.api\\DevIO.api.csproj",
   "expectedPackageFiles": [
@@ -118,7 +118,9 @@
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.2\\swashbuckle.aspnetcore.swagger.6.3.2.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
