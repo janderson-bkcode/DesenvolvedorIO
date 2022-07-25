@@ -111,7 +111,11 @@ namespace DevIO.api.Controllers
 
         public async Task<IActionResult> Atualizar(Guid id ,ProdutoViewModel produtoViewModel)
         {
-            if (id != produtoViewModel.Id) return NotFound();
+            if (id != produtoViewModel.Id) {
+                NotificarErro("Os ids informados não são iguais");
+                // return NotFound();
+                return CustomResponse();
+            };
 
             var produtoAtualizacao = await ObterProduto(id);
             produtoViewModel.Imagem = produtoAtualizacao.Imagem;
