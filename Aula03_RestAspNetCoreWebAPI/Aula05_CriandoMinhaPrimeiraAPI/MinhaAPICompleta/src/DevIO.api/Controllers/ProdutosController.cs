@@ -85,7 +85,7 @@ namespace DevIO.api.Controllers
             return CustomResponse(produtoViewModel);
         }
 
-        [DisableRequestSizeLimit]
+        [DisableRequestSizeLimit]//Tirando o Limite do tamanho de Request sem abrir brecha com base64
         [RequestSizeLimit(40000000)] // Limitando tamanho para 40 MB
         [HttpPost("imagem")]
         public async Task<ActionResult> AdicionarImagem(IFormFile file)
