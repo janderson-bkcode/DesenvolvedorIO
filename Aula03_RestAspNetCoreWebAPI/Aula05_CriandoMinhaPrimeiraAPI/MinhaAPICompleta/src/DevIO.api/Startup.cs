@@ -40,21 +40,10 @@ namespace DevIO.api
 
             });
             //  services.AddSwaggerConfig();
-            services.AddMvc();
-           
-            //services.AddMvcCore()
-            //    .AddApiExplorer();
-            // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddAutoMapper(typeof(Startup)); //AutoMapperConfig.cs
+                     
+            services.AddAutoMapper(typeof(Startup)); //AutoMapperConfig.cs        
 
-            //Desabilitar a formatação e validação de erros automatico
-            //removendo configuração padrão
-            //Suprimindo a forma de validação da ViewModel automatica para podermos personalizar a validação de erros
-            services.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.SuppressModelStateInvalidFilter = true;
-            });
-
+            services.WebApiConfig();
             //Injeção de Dependência
             services.ResolveDependencies();
         }
@@ -66,17 +55,13 @@ namespace DevIO.api
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
+            else
             {
-                endpoints.MapControllers();
-            });
+                app.UseHsts();
+            }
+
+
+            app.UseMvcConfiguration();
 
            
         }
