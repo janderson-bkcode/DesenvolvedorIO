@@ -13,11 +13,11 @@ namespace DevIO.api.Extensions
 {
     public class JsonWithFilesFormDataModelBinder : IModelBinder
     {
-        private readonly IOptions<MvcJsonOptions> _jsonOptions;
+        private readonly IOptions<JsonOptions> _jsonOptions;
 
         private readonly FormFileModelBinder _formFileModelBinder;
 
-        public JsonWithFilesFormDataModelBinder(IOptions<MvcJsonOptions> jsonOptions, ILoggerFactory loggerFactory)
+        public JsonWithFilesFormDataModelBinder(IOptions<JsonOptions> jsonOptions, ILoggerFactory loggerFactory)
         {
             _jsonOptions = jsonOptions;
             _formFileModelBinder = new FormFileModelBinder(loggerFactory);

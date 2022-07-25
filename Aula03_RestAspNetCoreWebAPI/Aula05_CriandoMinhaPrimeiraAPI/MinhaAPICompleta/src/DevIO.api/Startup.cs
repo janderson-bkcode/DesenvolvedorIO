@@ -34,7 +34,11 @@ namespace DevIO.api
                 options.UseSqlServer(Configuration.GetConnectionString(name: "DefaultConnection"));
             });
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options => {
+                options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                options.JsonSerializerOptions.DictionaryKeyPolicy = null;
+
+            });
             //  services.AddSwaggerConfig();
             services.AddMvc();
            

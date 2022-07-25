@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DevIO.api.Extensions;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace DevIO.api.ViewModels
 {
+    [ModelBinder(typeof(JsonWithFilesFormDataModelBinder),Name= "Produto")]
     public class ProdutoImagemViewModel
     {
         [Key]
