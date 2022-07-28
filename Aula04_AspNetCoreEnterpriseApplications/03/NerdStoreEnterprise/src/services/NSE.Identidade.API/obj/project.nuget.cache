@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "p6fI2B8KM8hhRh0pIk+Qh+EN6giFX7i0AlgL9Upyn6bkkxhLExkucfzTt/TWgMoltP8hYjEtrBi+IblgojNuJw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula04_AspNetCoreEnterpriseApplications\\03\\NerdStoreEnterprise\\src\\services\\NSE.Identidade.API\\NSE.Identidade.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}
