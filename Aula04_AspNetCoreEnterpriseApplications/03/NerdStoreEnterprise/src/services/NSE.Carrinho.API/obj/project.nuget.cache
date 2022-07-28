@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vYFJy0ur8bROGR0IFhqmzilUF8EpCugvS8PGOZPweeg1fNME2Gr6U5/snz7OazHL0TVCmhU83YWw2AkIf0QfSA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula04_AspNetCoreEnterpriseApplications\\03\\NerdStoreEnterprise\\src\\services\\NSE.Carrinho.API\\NSE.Carrinho.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}

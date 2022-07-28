@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q+MF2zjoeOWwao/5Xkpdw6IbPFaJY1h1qoD/r0Eo4nLiDLBfsBGm5Hjqg6N4mz+HQgOFjRQB+HkXGd7Pb0j3Jw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula04_AspNetCoreEnterpriseApplications\\03\\NerdStoreEnterprise\\src\\services\\NSE.Pagamento.API\\NSE.Pagamento.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512"
+  ],
+  "logs": []
+}
