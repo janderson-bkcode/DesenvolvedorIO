@@ -1,0 +1,16 @@
+Modul
+
+Facilidade para mudança
+Estabilidade
+Escalabilidade
+Perfomance
+Segurança
+Menor Complexidade possivel
+
+
+Microsserviços ?
+
+API Gateway
+Facilidade de implementar mudanças,porque os microsServiços são indepedentes~
+deploy facilitado
+trabalhar com DevOps facilmente
