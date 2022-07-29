@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using NSE.Identidade.API.Data;
+using NSE.Identidade.API.Extensions;
 using System;
 using System.Text;
 
@@ -36,6 +37,21 @@ namespace NSE.Identidade.API
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            /// 
+            /// JWT configuração
+            ///
+
+            //Vai até o appsettings.json.Development.json e pegue a seção AppSettings
+            var appSettingsSection = Configuration.GetSection(key:"AppSettings");
+            // A classe AppSettings represente os dados da seção AppSettings que esta appsettings.json.Development.json
+            services.Configure<AppSettings>(appSettingsSection);
+
+            //appSettings já populada
+            var appSettings = appSettingsSection.Get<AppSettings>();
+
+            //A Chave será transformarda em Bytes 
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+
 
             services.AddAuthentication(options =>
             {
@@ -49,17 +65,21 @@ namespace NSE.Identidade.API
                 bearerOptions.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(s:"x")),//Chave estara aqui
+                    IssuerSigningKey = new SymmetricSecurityKey(key),//Chave estara aqui
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidAudience = "x",
-                    ValidIssuer  ="x"
+                    ValidAudience = appSettings.ValidoEm,
+                    ValidIssuer  = appSettings.Emissor
                 };
             });
 
 
 
             services.AddControllers();
+
+            /// 
+            /// Swagger Configuração
+            ///
 
             //Configuração documentação Swagger
             services.AddSwaggerGen( c => 
