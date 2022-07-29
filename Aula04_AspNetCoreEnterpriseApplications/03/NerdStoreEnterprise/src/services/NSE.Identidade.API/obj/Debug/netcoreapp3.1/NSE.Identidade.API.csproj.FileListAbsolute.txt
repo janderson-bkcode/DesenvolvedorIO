@@ -69,3 +69,4 @@ C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula04_AspNetCoreE
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula04_AspNetCoreEnterpriseApplications\03\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\netcoreapp3.1\NSE.Identidade.API.dll
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula04_AspNetCoreEnterpriseApplications\03\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\netcoreapp3.1\NSE.Identidade.API.pdb
 C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula04_AspNetCoreEnterpriseApplications\03\NerdStoreEnterprise\src\services\NSE.Identidade.API\obj\Debug\netcoreapp3.1\NSE.Identidade.API.genruntimeconfig.cache
+C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula04_AspNetCoreEnterpriseApplications\03\NerdStoreEnterprise\src\services\NSE.Identidade.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

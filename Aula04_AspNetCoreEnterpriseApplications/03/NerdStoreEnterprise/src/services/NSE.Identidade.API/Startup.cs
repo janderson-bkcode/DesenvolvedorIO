@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -27,8 +28,17 @@ namespace NSE.Identidade.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //Configuração do Identity
+            services.AddDefaultIdentity<IdentityUser>()
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            
             services.AddControllers();
         }
 
@@ -41,10 +51,13 @@ namespace NSE.Identidade.API
             }
 
             app.UseHttpsRedirection();
-
+              
             app.UseRouting();
 
-            app.UseAuthorization(); 
+            app.UseAuthorization();
+
+            app.UseAuthentication();
+
 
             app.UseEndpoints(endpoints =>
             {
