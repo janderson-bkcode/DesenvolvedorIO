@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AcaTX0na2d20NTK6KVkpjDMtyux/CjPcGtcdMiXFCb/KPuqad7HbBAvNHySTh4yvUw/2kTHFMMQshPTdx2EiaA==",
+  "dgSpecHash": "9zSxpTexFuW5s7Q/ixB08T3gPhB+vI9nOuxFbx798KphfKG9ZQlbvrp+GhF1ro5Tyb+EkrTCsC8iymT0aSiCzQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula04_AspNetCoreEnterpriseApplications\\03\\NerdStoreEnterprise\\src\\services\\NSE.Identidade.API\\NSE.Identidade.API.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.3\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.3.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.3\\microsoft.aspnetcore.identity.ui.3.1.3.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
+    "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\5.0.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

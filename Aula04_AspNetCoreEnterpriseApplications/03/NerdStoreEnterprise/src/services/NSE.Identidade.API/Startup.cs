@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,9 +18,12 @@ namespace NSE.Identidade.API
 {
     public class Startup
     {
+
+        private readonly IApiVersionDescriptionProvider Provider;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -42,7 +46,7 @@ namespace NSE.Identidade.API
             ///
 
             //Vai até o appsettings.json.Development.json e pegue a seção AppSettings
-            var appSettingsSection = Configuration.GetSection(key:"AppSettings");
+            var appSettingsSection = Configuration.GetSection(key: "AppSettings");
             // A classe AppSettings represente os dados da seção AppSettings que esta appsettings.json.Development.json
             services.Configure<AppSettings>(appSettingsSection);
 
@@ -69,7 +73,7 @@ namespace NSE.Identidade.API
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidAudience = appSettings.ValidoEm,
-                    ValidIssuer  = appSettings.Emissor
+                    ValidIssuer = appSettings.Emissor
                 };
             });
 
@@ -82,14 +86,14 @@ namespace NSE.Identidade.API
             ///
 
             //Configuração documentação Swagger
-            services.AddSwaggerGen( c => 
+            services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc(name: "v1", new OpenApiInfo
+                c.SwaggerDoc(name:"v1", new OpenApiInfo
                 {
-                    Title ="NerdStore Entreprise Identity API",
-                    Description="Esta API faz parte do curso ASP.NET Core Enterprise Applications",
-                    Contact = new OpenApiContact() { Name="Eduardo Pires",Email="contato@desenvolvedor.io"},
-                    License = new OpenApiLicense() { Name ="MIT",Url= new Uri("https://opensource.org/licenses/MIT") }
+                    Title = "NerdStore Entreprise Identity API",
+                    Description = "Esta API faz parte do curso ASP.NET Core Enterprise Applications",
+                    Contact = new OpenApiContact() { Name = "Eduardo Pires", Email = "contato@desenvolvedor.io" },
+                    License = new OpenApiLicense() { Name = "MIT", Url = new Uri("https://opensource.org/licenses/MIT") }
                 });
             });
         }
@@ -100,7 +104,7 @@ namespace NSE.Identidade.API
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint(url: "/swagger/v1/swagger.json", name: "v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json","v1");
             });
 
             if (env.IsDevelopment())
@@ -109,7 +113,7 @@ namespace NSE.Identidade.API
             }
 
             app.UseHttpsRedirection();
-              
+
             app.UseRouting();
 
             app.UseAuthorization();
