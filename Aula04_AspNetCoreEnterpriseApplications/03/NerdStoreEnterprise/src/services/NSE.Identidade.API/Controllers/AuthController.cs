@@ -14,9 +14,9 @@ using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegiste
 
 namespace NSE.Identidade.API.Controllers
 {
-    [ApiController]// Além de identificar que é uma APIController, o swagger add os Schemas 
+    
     [Route("api-identidade")]
-    public class AuthController : Controller
+    public class AuthController : MainController
     {
 
         private readonly UserManager<IdentityUser> _userManager;
@@ -35,7 +35,7 @@ namespace NSE.Identidade.API.Controllers
         [HttpPost("nova-conta")]
         public async Task<ActionResult> Registrar(UsuarioRegistro usuarioRegistro)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState); //BadRequest();
 
             var user = new IdentityUser
             {
@@ -48,25 +48,40 @@ namespace NSE.Identidade.API.Controllers
 
             if (result.Succeeded)
             {
-                await _signInManager.SignInAsync(user, isPersistent: false);
-                return Ok(await GerarJWT(usuarioRegistro.Email));
+              //  await _signInManager.SignInAsync(user, isPersistent: false);
+                //return Ok(await GerarJWT(usuarioRegistro.Email));
+                return CustomResponse(await GerarJWT(usuarioRegistro.Email));
             }
 
-            return BadRequest();
+            //Varrendo erros e adicionando na coleção
+            foreach (var error in result.Errors)
+            {
+                AdicionarErroProcessamento(error.Description);
+            }
+
+            return CustomResponse(); //BadRequest();
 
         }
         [HttpPost("autenticar")]
         public async Task<ActionResult> Login(UsuarioLogin usuarioLogin)
         {
-            if (!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return CustomResponse(ModelState);//BadRequest();
 
             var result = await _signInManager.PasswordSignInAsync(userName: usuarioLogin.Email, password: usuarioLogin.Senha, isPersistent: false, lockoutOnFailure: true);
 
             if (result.Succeeded)
             {
-                return Ok(await GerarJWT(usuarioLogin.Email));
+                return CustomResponse(await GerarJWT(usuarioLogin.Email));
+               // return Ok(await GerarJWT(usuarioLogin.Email));
             }
-            return BadRequest();
+
+            if (result.IsLockedOut)
+            {
+                AdicionarErroProcessamento("Usuário temporariamente bloqueada por tentativas inválidas");
+                return CustomResponse();
+            }
+            AdicionarErroProcessamento("Usuario ou Senha Incorretos");
+            return CustomResponse(); //BadRequest();
         }
 
         public async Task<UsuarioRespostaLogin> GerarJWT(string email)
