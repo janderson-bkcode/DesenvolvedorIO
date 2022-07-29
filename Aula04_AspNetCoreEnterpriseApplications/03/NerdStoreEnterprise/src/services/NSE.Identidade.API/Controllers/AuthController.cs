@@ -6,6 +6,7 @@ using NSE.Identidade.API.Extensions;
 using NSE.Identidade.API.Models;
 using System;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,7 @@ namespace NSE.Identidade.API.Controllers
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly AppSettings _appSettings;
 
-        public AuthController(UserManager<IdentityUser> userManager, 
+        public AuthController(UserManager<IdentityUser> userManager,
                               SignInManager<IdentityUser> signInManager,
                              IOptions<AppSettings> appSettings)
         {
@@ -76,11 +77,11 @@ namespace NSE.Identidade.API.Controllers
 
             //Adicionando claims 
 
-            claims.Add(new Claim(type:JwtRegisteredClaimNames.Sub,value: user.Id));
+            claims.Add(new Claim(type: JwtRegisteredClaimNames.Sub, value: user.Id));
             claims.Add(new Claim(type: JwtRegisteredClaimNames.Email, value: user.Email));
             claims.Add(new Claim(type: JwtRegisteredClaimNames.Jti, value: Guid.NewGuid().ToString()));
             claims.Add(new Claim(type: JwtRegisteredClaimNames.Nbf, value: ToUnixEpochDate(DateTime.UtcNow).ToString())); // Quando o token vai expirar
-            claims.Add(new Claim(type: JwtRegisteredClaimNames.Iat, value: ToUnixEpochDate(DateTime.UtcNow).ToString(),ClaimValueTypes.Integer64));//quanto o token foi emitido
+            claims.Add(new Claim(type: JwtRegisteredClaimNames.Iat, value: ToUnixEpochDate(DateTime.UtcNow).ToString(), ClaimValueTypes.Integer64));//quanto o token foi emitido
 
             foreach (var userRole in userRoles)
             {
@@ -104,10 +105,28 @@ namespace NSE.Identidade.API.Controllers
                 Audience = _appSettings.ValidoEm,
                 Subject = identityClaims,
                 Expires = DateTime.UtcNow.AddHours(_appSettings.ExpiracaoHoras),///2 horas a+ no padrão utc
-                SigningCredentials = new SigningCredentials( new SymmetricSecurityKey(key),algorithm:SecurityAlgorithms.HmacSha256Signature)
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), algorithm: SecurityAlgorithms.HmacSha256Signature)
             });
 
+            //Token Criptografado
+            var encodedToken = tokenHandler.WriteToken(token);
 
+            //Popular a resposta pra o método 
+
+            var response = new UsuarioRespostaLogin
+            {
+
+                AccessToken = encodedToken,
+                ExpiresIn = TimeSpan.FromHours(_appSettings.ExpiracaoHoras).TotalSeconds,
+                UsuarioToken = new UsuarioToken
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    Claims = claims.Select(c => new UsuarioClaim { Type = c.Type,Value = c.Value})
+                }
+            };
+
+            return response;
 
         }
 
