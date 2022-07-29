@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace NSE.Identidade.API.Controllers
 {
+    [ApiController]// Além de identificar que é uma APIController, o swagger add os Schemas 
     [Route("api-identidade")]
     public class AuthController : Controller
     {
