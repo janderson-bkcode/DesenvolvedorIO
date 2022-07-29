@@ -15,7 +15,7 @@ using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegiste
 namespace NSE.Identidade.API.Controllers
 {
     
-    [Route("api-identidade")]
+    [Route("api/identidade")]
     public class AuthController : MainController
     {
 
