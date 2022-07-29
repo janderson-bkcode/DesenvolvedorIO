@@ -22,6 +22,9 @@ namespace NS.Identidade.API.Configuration
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
