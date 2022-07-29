@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NSE.Identidade.API.Models;
+using System;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace NSE.Identidade.API.Controllers
@@ -22,7 +25,7 @@ namespace NSE.Identidade.API.Controllers
         [HttpPost("nova-conta")]
         public async Task<ActionResult> Registrar(UsuarioRegistro usuarioRegistro)
         {
-            if(!ModelState.IsValid) return BadRequest();
+            if (!ModelState.IsValid) return BadRequest();
 
             var user = new IdentityUser
             {
@@ -31,11 +34,11 @@ namespace NSE.Identidade.API.Controllers
                 EmailConfirmed = true
             };
 
-            var result = await _userManager.CreateAsync(user,usuarioRegistro.Senha);
+            var result = await _userManager.CreateAsync(user, usuarioRegistro.Senha);
 
             if (result.Succeeded)
             {
-                await _signInManager.SignInAsync(user, isPersistent:false);
+                await _signInManager.SignInAsync(user, isPersistent: false);
                 return Ok();
             }
 
@@ -47,7 +50,7 @@ namespace NSE.Identidade.API.Controllers
         {
             if (!ModelState.IsValid) return BadRequest();
 
-            var result = await  _signInManager.PasswordSignInAsync(userName:usuarioLogin.Email, password:usuarioLogin.Senha,isPersistent:false,lockoutOnFailure:true);
+            var result = await _signInManager.PasswordSignInAsync(userName: usuarioLogin.Email, password: usuarioLogin.Senha, isPersistent: false, lockoutOnFailure: true);
 
             if (result.Succeeded)
             {
@@ -55,5 +58,20 @@ namespace NSE.Identidade.API.Controllers
             }
             return BadRequest();
         }
+
+        public async Task<UsuarioRespostaLogin> GerarJWT(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            var claims = await _userManager.GetClaimsAsync(user);
+            var userRoles = await _userManager.GetRolesAsync(user);
+
+            claims.Add(new Claim(JwtRegisteredClaimNames.Sub, user.Id));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
+
+
+
+        }
     }
+
 }
