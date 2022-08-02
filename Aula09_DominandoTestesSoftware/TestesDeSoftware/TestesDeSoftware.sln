@@ -9,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - TDD", "02 - TDD", "{30
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C1646B9A-C7D9-49AF-91D2-BBDC455E5BF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Application.Tests", "02 - TDD\tests\NerdStore.Vendas.Application.Tests\NerdStore.Vendas.Application.Tests.csproj", "{FB887EAA-8696-401A-A8C2-0761FB001ACC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Domain.Tests", "02 - TDD\tests\NerdStore.Vendas.Domain.Tests\NerdStore.Vendas.Domain.Tests.csproj", "{7F6D17C1-2810-4EA4-971B-90D515588D23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Vendas.Domain", "02 - TDD\src\NerdStore.Vendas.Domain\NerdStore.Vendas.Domain.csproj", "{DE4FF661-DE36-4547-891E-2C87AF40CD91}"
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB887EAA-8696-401A-A8C2-0761FB001ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB887EAA-8696-401A-A8C2-0761FB001ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB887EAA-8696-401A-A8C2-0761FB001ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB887EAA-8696-401A-A8C2-0761FB001ACC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F6D17C1-2810-4EA4-971B-90D515588D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F6D17C1-2810-4EA4-971B-90D515588D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F6D17C1-2810-4EA4-971B-90D515588D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,7 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C1646B9A-C7D9-49AF-91D2-BBDC455E5BF8} = {30AF6AA6-0F02-471D-98B8-DA37DC9C69A5}
-		{FB887EAA-8696-401A-A8C2-0761FB001ACC} = {C1646B9A-C7D9-49AF-91D2-BBDC455E5BF8}
 		{7F6D17C1-2810-4EA4-971B-90D515588D23} = {C1646B9A-C7D9-49AF-91D2-BBDC455E5BF8}
 		{DE4FF661-DE36-4547-891E-2C87AF40CD91} = {30AF6AA6-0F02-471D-98B8-DA37DC9C69A5}
 	EndGlobalSection
