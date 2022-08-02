@@ -53,5 +53,23 @@ namespace NerdStore.Vendas.Domain
          */
 
         /*PEDIDO DOMMANDS - HANDLER*/
+
+        /*
+         
+            O commando handler de pedido irá manipular um command para cada intenção em relação ao pedido.
+            Em todos os commandos manipulados devem ser verificados:
+
+            Se o command é valido 
+            Se o pedido existe
+            Se o item do pedido existe
+
+            Na alteração de estado do pedido:
+                Deve ser feita via repositório
+                Deve enviar um evento 
+
+            1 - AdicionarItemPedidocommand
+                1.1. - Verificar se é um pedido novo ou em andamento
+                1.2 Verificar se o item já foi adicionado a lista 
+         */
     }
 }
