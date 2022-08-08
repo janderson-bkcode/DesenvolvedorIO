@@ -19,6 +19,7 @@ namespace NS.WebApp.MVC.Services
 
         protected async Task<T> DeserializarObjetoResponse<T>(HttpResponseMessage responseMessage)
         {
+            //Usando pra poder desererializar por causa do using System.Text.Json que não consegue de objeto para string;
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
