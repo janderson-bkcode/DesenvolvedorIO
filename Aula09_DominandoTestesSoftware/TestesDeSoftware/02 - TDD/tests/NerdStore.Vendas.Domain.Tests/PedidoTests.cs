@@ -10,6 +10,8 @@ namespace NerdStore.Vendas.Domain.Tests
         [Fact(DisplayName ="Adicionar Item Novo Pedido")]
         [Trait("Categoria","Pedido Tests")]
 
+
+                    //MetodoEmTeste_EstadoEmTeste_ComportamentoEsperado
         public void AdicionarItemPedido_NovoPedido_DeveAtualizarValor()
         {
             //Arrange
