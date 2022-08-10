@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IKdh2SwrlZh4zV5ymPDlc3JP8MquObiqNPLYJLRsWjuLtgoDJb7wKLy8MdZpFhi0gD4leV0HdV+uc61cJrdsZA==",
+  "dgSpecHash": "DMp1oG7e+MQnmKEUx9so5+ChGYw8Mu8tRAX9V+EEvlsZO3UFGNm3JCiZs3bIr7idFkdB1jT4SnHf5Pf+IiWqMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\TestesDeSoftware\\02 - TDD\\tests\\NerdStore.Vendas.Domain.Tests\\NerdStore.Vendas.Domain.Tests.csproj",
+  "projectFilePath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\03\\TestesDeSoftware\\02 - TDD\\tests\\NerdStore.Vendas.Domain.Tests\\NerdStore.Vendas.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\janderson.goncalves\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {}
+    "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\03\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
+    "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\03\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\03\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
         "projectName": "NerdStore.Vendas.Domain",
-        "projectPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
+        "projectPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\03\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\NerdStore.Vendas.Domain.csproj",
         "packagesPath": "C:\\Users\\janderson.goncalves\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\obj\\",
+        "outputPath": "C:\\Users\\janderson.goncalves\\Documents\\Github\\DesenvolvedorIO\\Aula09_DominandoTestesSoftware\\03\\TestesDeSoftware\\02 - TDD\\src\\NerdStore.Vendas.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
