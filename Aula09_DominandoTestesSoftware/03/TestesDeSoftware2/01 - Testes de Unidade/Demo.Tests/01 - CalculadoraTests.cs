@@ -5,7 +5,8 @@ namespace Demo.Tests
 {
     public class CalculadoraTests
     {
-        [Fact]
+        /// Todos os métodos do teste são publicos 
+        [Fact] //Fato 2 +2 = 4 
         public void Calculadora_Somar_RetornarValorDaSoma()
         {
             //Arrange
@@ -57,7 +58,7 @@ namespace Demo.Tests
             Assert.Equal(expected: 4, actual: resultado);
         }
 
-        [Theory]
+        [Theory] //Teoria não só uma soma é suficiente, provando e validando o método somar com demais valores e cenários para ser verdade
         [InlineData(1, 1, 2)]
         [InlineData(2, 2, 4)]
         [InlineData(3, 3, 6)]
