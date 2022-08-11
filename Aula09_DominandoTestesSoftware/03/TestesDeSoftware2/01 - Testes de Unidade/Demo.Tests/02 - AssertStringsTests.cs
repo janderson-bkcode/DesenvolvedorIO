@@ -71,7 +71,7 @@ namespace Demo.Tests
         }
 
         [Fact]
-        public void StringsTools_UnirNomes_ValidarExpressaoRegular()
+        public void StringsTools_Unir_ValidarExpressaoRegular()
         {
             // Arrange
 
