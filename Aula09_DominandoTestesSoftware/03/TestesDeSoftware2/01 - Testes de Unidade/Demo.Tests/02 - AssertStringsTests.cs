@@ -69,5 +69,20 @@ namespace Demo.Tests
             // Assert
             Assert.EndsWith(expectedEndString: "doi", actualString: nomeCompleto);
         }
+
+        [Fact]
+        public void StringsTools_UnirNomes_ValidarExpressaoRegular()
+        {
+            // Arrange
+
+            var sut = new StringTools();
+
+            // Act
+            var nomeCompleto = sut.Unir(nome: "Eduardo", sobrenome: "Pires");
+
+            // Assert
+
+            Assert.Matches(expectedRegexPattern: "[A-Z]{1}[a-z] + [A-Z]{1}[a-z]+", actualString: nomeCompleto);
+        }
     }
 }
