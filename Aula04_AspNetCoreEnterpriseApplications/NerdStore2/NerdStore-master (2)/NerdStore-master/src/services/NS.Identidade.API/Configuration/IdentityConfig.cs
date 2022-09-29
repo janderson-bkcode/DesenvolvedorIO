@@ -57,7 +57,7 @@ namespace NS.Identidade.API.Configuration
         public static IApplicationBuilder UseIdentityConfiguration(this IApplicationBuilder app)
         {
 
-            app.UseAuthorization();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             return app;
