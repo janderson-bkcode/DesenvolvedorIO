@@ -1,0 +1,12 @@
+﻿
+@*@{
+    ViewData["Title"] = "Index";
+	@model UI.Site.Models.Pedido
+}
+
+<h1>Pedido: @Model.Id</h1>*@
+
+@using UI.Site.Data
+@inject IPedidoRespository PedidoRespository
+
+<h1>Pedido: @PedidoRespository.ObeterPedido().Id </h1>

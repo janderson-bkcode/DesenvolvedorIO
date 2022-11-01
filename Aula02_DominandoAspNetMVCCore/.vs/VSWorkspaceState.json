@@ -1,17 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Aula08_EntityFramework\\AppModelo",
-    "\\Aula08_EntityFramework\\AppModelo\\src",
-    "\\Aula08_EntityFramework\\AppModelo\\src\\Dev.IO.UI.Site",
-    "\\Aula09_SegurancaAspNetIdentity",
-    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity",
-    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity",
-    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas",
-    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity",
-    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity\\Data",
-    "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Controllers"
+    "\\Aula04_Views",
+    "\\Aula04_Views\\A.4_DemoMvcViews",
+    "\\Aula04_Views\\A.4_DemoMvcViews\\A.4_DemoMvcViews",
+    "\\Aula04_Views\\A.4_DemoMvcViews\\A.4_DemoMvcViews\\Controllers",
+    "\\Aula04_Views\\A.4_DemoMvcViews\\A2.12_DemoMvcScaffold",
+    "\\Aula04_Views\\A.4_DemoMvcViews\\A2.12_DemoMvcScaffold\\Controllers",
+    "\\Aula04_Views\\A.4_DemoMvcViews\\A2.12_DemoMvcScaffold\\Views",
+    "\\Aula04_Views\\A.4_DemoMvcViews\\A2.12_DemoMvcScaffold\\Views\\Filmes",
+    "\\Aula04_Views\\A.4_DemoMvcViews\\A2.12_DemoMvcScaffold\\Views\\Home"
   ],
-  "SelectedNode": "\\Aula09_SegurancaAspNetIdentity\\AspNetCoreIdentity\\AspNetCoreIdentity\\Areas\\Identity\\Data\\AspNetCoreIdentityContext.cs",
+  "SelectedNode": "\\Aula04_Views\\A.4_DemoMvcViews\\A2.12_DemoMvcScaffold\\Views\\Filmes\\_DadosFormulario.cshtml",
   "PreviewInSolutionExplorer": false
 }

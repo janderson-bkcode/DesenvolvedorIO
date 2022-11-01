@@ -1,0 +1,53 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:63003",
+      "sslPort": 44327
+    }
+  },
+	"profiles": {
+		"IIS - Dev": {
+			"commandName": "IISExpress",
+			"launchBrowser": true,
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		},
+		"IIS - Staging": {
+			"commandName": "IISExpress",
+			"launchBrowser": true,
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Staging"
+			}
+		},
+		"IIS - Prod": {
+			"commandName": "IISExpress",
+			"launchBrowser": true,
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Production"
+			}
+		},
+		"Self Hosting": {
+			"commandName": "Project",
+			"launchBrowser": true,
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			},
+			"applicationUrl": "https://localhost:5001;http://localhost:5000"
+		},
+		"Docker": {
+			"commandName": "Docker",
+			"launchBrowser": true,
+			"launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+			"environmentVariables": {
+				"ASPNETCORE_URLS": "https://+:443;http://+:80",
+				"ASPNETCORE_HTTPS_PORT": "44328"
+			},
+			"httpPort": 63004,
+			"useSSL": true,
+			"sslPort": 44328
+		}
+	}
+}

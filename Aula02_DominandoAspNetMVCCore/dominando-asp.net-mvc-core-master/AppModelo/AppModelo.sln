@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.Site", "src\UI.Site\UI.Site.csproj", "{8565C84D-59AF-4898-B62C-6B5AE18DFEDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreIdentity", "AspNetCoreIdentity\AspNetCoreIdentity.csproj", "{9C52ED80-EF1C-4515-BF3A-4CF407C83F94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8565C84D-59AF-4898-B62C-6B5AE18DFEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8565C84D-59AF-4898-B62C-6B5AE18DFEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8565C84D-59AF-4898-B62C-6B5AE18DFEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8565C84D-59AF-4898-B62C-6B5AE18DFEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C52ED80-EF1C-4515-BF3A-4CF407C83F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C52ED80-EF1C-4515-BF3A-4CF407C83F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C52ED80-EF1C-4515-BF3A-4CF407C83F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C52ED80-EF1C-4515-BF3A-4CF407C83F94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CAF041F-ED5D-4990-B58F-B17A9329D1A4}
+	EndGlobalSection
+EndGlobal

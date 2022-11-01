@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/AppModelo/.vs/AppModelo/v16
+/AppModelo/.vs/AppModelo/config
+/AppModelo/src/UI.Site/bin/Debug
+/AppModelo/src/UI.Site/obj
+/AppModelo/.vs/AppModelo/DesignTimeBuild
+/AppModelo/src/UI.Site/bin/Release/netcoreapp3.0
+/AppModelo/AspNetCoreIdentity/bin/Debug/netcoreapp3.0
+/AppModelo/AspNetCoreIdentity/obj
