@@ -2,7 +2,7 @@
 
 namespace NerdStore.Catalogo.Domain
 {
-    public class Dimensoes
+    public class Dimensoes  //Value Object
     {
         public decimal Altura { get; private set; }
         public decimal Largura { get; private set; }
