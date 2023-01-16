@@ -13,7 +13,7 @@ namespace NerdStore.Catalogo.Domain
         public DateTime DataCadastro { get; private set; }
         public string Imagem { get; private set; }
         public int QuantidadeEstoque { get; private set; }
-        public Dimensoes Dimensoes { get; private set; }
+        public Dimensoes Dimensoes { get; private set; } // Value Object
         
         public Categoria Categoria { get; private set; }
 
