@@ -28,22 +28,22 @@ namespace NerdStore.Catalogo.Data
 
             modelBuilder.Ignore<Event>();
 
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly); // Registrando todos e buscando os Mappings
         }
 
         public async Task<bool> Commit()
         {
             foreach (var entry in ChangeTracker.Entries()
-                .Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
+                .Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null)) // Buscando todas as colunas e propriedades que possui o Nome "DataCadastro"
             {
                 if (entry.State == EntityState.Added)
                 {
-                    entry.Property("DataCadastro").CurrentValue = DateTime.Now;
+                    entry.Property("DataCadastro").CurrentValue = DateTime.Now; // Se existe e está adicionando a Entidade , DataCadastro é igual a Data da operação
                 }
 
                 if (entry.State == EntityState.Modified)
                 {
-                    entry.Property("DataCadastro").IsModified = false;
+                    entry.Property("DataCadastro").IsModified = false; // Caso seja mofidicação da entidade, ignorar qualquer dado do campo "DataCadastro", para não sobrescrever o valor com o DateTimeNow
                 }
             }
 
