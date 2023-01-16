@@ -19,7 +19,9 @@ namespace NerdStore.Catalogo.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetProperties().Where(p => p.ClrType == typeof(string))))
+            // Baixar nugets => Install-Package Microsoft.EntityFrameworkCore.Design  e  Install-Package Microsoft.EntityFrameworkCore.SqlServer;
+
+            foreach (var property in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetProperties().Where(p => p.ClrType == typeof(string)))) // Para cada propriedade que seja do tipo  String será mapeado como Varchar(100) no Entity Framework para SQL
             {
                 property.SetColumnType("varchar(100)");
             }
