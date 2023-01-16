@@ -9,9 +9,9 @@ namespace NerdStore.Catalogo.Domain
         public int Codigo { get; private set; }
 
         // EF Relation
-        public ICollection<Produto> Produtos { get; set; }
+        public ICollection<Produto> Produtos { get; set; } // Necessário para o Mapping da Categoria no Entity Framework não é para fins de Modelagem
 
-        protected Categoria() { }
+        protected Categoria() { } // Necessário para o Entity que pode ter problemas com objetos que não tem construtor aberto(sem parametros)
 
         public Categoria(string nome, int codigo)
         {
