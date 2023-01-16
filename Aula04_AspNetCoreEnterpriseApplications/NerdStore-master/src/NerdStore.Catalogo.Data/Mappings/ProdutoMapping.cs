@@ -22,7 +22,7 @@ namespace NerdStore.Catalogo.Data.Mappings
                 .IsRequired()
                 .HasColumnType("varchar(250)");
 
-            builder.OwnsOne(c => c.Dimensoes, cm =>
+            builder.OwnsOne(c => c.Dimensoes, cm => // Transformando o Objeto de Valor Dimensões e suas propriedades para colunas na tabela Produtos
             {
                 cm.Property(c => c.Altura)
                     .HasColumnName("Altura")
