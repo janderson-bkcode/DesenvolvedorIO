@@ -15,8 +15,17 @@ namespace NerdStore.Catalogo.Data
         
         public CatalogoContext(DbContextOptions<CatalogoContext> options) : base(options)
         {
+     
         }
 
+        //Método para desativar o LazyLoading
+        public static CatalogoContext DisableLazyLoading(CatalogoContext dbcontext)
+        {
+           dbcontext.ChangeTracker.LazyLoadingEnabled = false;
+
+            return dbcontext;
+
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Baixar nugets => Install-Package Microsoft.EntityFrameworkCore.Design  e  Install-Package Microsoft.EntityFrameworkCore.SqlServer;
@@ -30,7 +39,7 @@ namespace NerdStore.Catalogo.Data
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(CatalogoContext).Assembly); // Registrando todos e buscando os Mappings
         }
-
+        
         public async Task<bool> Commit()
         {
             foreach (var entry in ChangeTracker.Entries()

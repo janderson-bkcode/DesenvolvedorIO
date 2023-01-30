@@ -166,7 +166,7 @@ namespace NerdStore.Vendas.Domain
         {
             public static Pedido NovoPedidoRascunho(Guid clienteId)
             {
-                var pedido = new Pedido
+                var pedido = new Pedido //Apesar do construtor estar privado, como é um classe aninhada , tem acesso para poder instanciar
                 {
                     ClienteId = clienteId,
                 };
