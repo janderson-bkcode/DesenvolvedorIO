@@ -2,7 +2,6 @@
 {
     [ApiController]
     public abstract class MainController : Controller
-
     {
         protected ICollection<string> Erros = new List<string>();
 
@@ -21,11 +20,11 @@
 
         protected ActionResult CustomResponse(ModelStateDictionary modelState)
         {
-            var erros = modelState.Values.SelectMany(c => c.Erros);
+            var erros = modelState.Values.SelectMany(c => c.Errors);
 
             foreach (var erro in erros)
             {
-                AdicionarErroProcessamento(erro.Message);
+                AdicionarErroProcessamento(erro.ErrorMessage);
             }
 
             return CustomResponse();
