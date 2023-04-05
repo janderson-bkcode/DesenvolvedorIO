@@ -1,6 +1,0 @@
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\ExcelFormLuiza\ExcelFormLuizaRepository\bin\Debug\ExcelFormLuizaRepository.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\ExcelFormLuiza\ExcelFormLuizaRepository\bin\Debug\ExcelFormLuizaRepository.pdb
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\ExcelFormLuiza\ExcelFormLuizaRepository\obj\Debug\ExcelFormLuizaRepository.csproj.AssemblyReference.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\ExcelFormLuiza\ExcelFormLuizaRepository\obj\Debug\ExcelFormLuizaRepository.csproj.CoreCompileInputs.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\ExcelFormLuiza\ExcelFormLuizaRepository\obj\Debug\ExcelFormLuizaRepository.dll
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\ExcelFormLuiza\ExcelFormLuizaRepository\obj\Debug\ExcelFormLuizaRepository.pdb
