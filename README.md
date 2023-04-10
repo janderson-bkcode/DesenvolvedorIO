@@ -1,2 +1,2 @@
 # DesenvolvedorIO
- Curso Eduardo Pires Desenvolvedor IO
+ Códigos em C# do Curso Ministrado pelo Eduardo Pires ,Desenvolvedor IO
