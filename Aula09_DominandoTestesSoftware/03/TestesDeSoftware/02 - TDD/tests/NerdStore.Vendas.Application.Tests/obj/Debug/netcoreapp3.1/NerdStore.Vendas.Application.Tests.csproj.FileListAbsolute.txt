@@ -1,2 +1,0 @@
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula09_DominandoTestesSoftware\TestesDeSoftware\02 - TDD\tests\NerdStore.Vendas.Application.Tests\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Application.Tests.csproj.AssemblyReference.cache
-C:\Users\janderson.goncalves\Documents\Github\DesenvolvedorIO\Aula09_DominandoTestesSoftware\TestesDeSoftware\02 - TDD\tests\NerdStore.Vendas.Application.Tests\obj\Debug\netcoreapp3.1\NerdStore.Vendas.Application.Tests.GeneratedMSBuildEditorConfig.editorconfig
