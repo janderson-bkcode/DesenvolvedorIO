@@ -9,7 +9,7 @@ namespace NerdStore.Enterprise.Core.DomainObjects
         public Guid Id { get; set; }
 
         private List<Event> _notificacoes;
-        public IReadOnlyCollection<Event> Notificacoes => _notificacoes?.AsReadOnly();
+        public IReadOnlyCollection<Event> Notificacoes => _notificacoes?.AsReadOnly(); // Lista somente leitura
 
         public void AdicionarEvento(Event @event)
         {
@@ -27,6 +27,9 @@ namespace NerdStore.Enterprise.Core.DomainObjects
             _notificacoes?.Clear();
         }
 
+        #region Comparações
+
+        
         public override bool Equals(object obj)
         {
             var compareTo = obj as Entity;
@@ -59,5 +62,6 @@ namespace NerdStore.Enterprise.Core.DomainObjects
         {
             return !(a == b);
         }
+        #endregion
     }
 }
