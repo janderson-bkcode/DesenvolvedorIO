@@ -32,8 +32,10 @@ namespace NerdStore.Enterprise.Cliente.API.Data.Mappings
                 .HasColumnType($"varchar({Email.EnderecoMaxLength})");
             });
 
-            // 1 : 1 => Aluno : Endereço
-            builder.HasOne(c => c.Endereco).WithOne(c => c.Cliente);
+            // 1 : 1 => Cliente : Endereço                   
+            builder
+                .HasOne(cliente => cliente.Endereco)    //"Cliente" tem um relacionamento com a entidade "Endereco"
+                .WithOne(endereco => endereco.Cliente); //Endereco" também tem um relacionamento com a entidade "Cliente"
 
             builder.ToTable("Clientes");
         }
